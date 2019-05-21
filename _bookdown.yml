@@ -1,5 +1,6 @@
-book_filename: "aulas_rmarkdown"
-delete_merged_file: true
-language:
-  ui:
-    chapter_name: "Capítulo "
+rmd_files: [
+  "index.Rmd",
+]
+
+output_dir: "docs"
+new_session: true

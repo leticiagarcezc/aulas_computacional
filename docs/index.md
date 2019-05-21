@@ -21,10 +21,7 @@ description: "Disciplina de Estatística Computacional - Departamento de Estatí
 # {-}
 
 <div class=text-justify>
-**Última atualização**: `r data <- function(){
-   vec_date <- unlist(strsplit(as.character(Sys.Date()), "-"))
-   paste(vec_date[3], vec_date[2], vec_date[1], sep="/")
-}; data()` <br/>
+**Última atualização**: 21/05/2019 <br/>
 **Departamento de Estatística (UFPB)**: <http://www.de.ufpb.br/> 
 
 ----
