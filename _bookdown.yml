@@ -1,6 +1,8 @@
+output_dir: "docs"
+new_session: yes
+delete_merged_file: yes
+
 rmd_files: [
   "index.Rmd",
   "prefacio.Rmd",
 ]
-output_dir: "docs"
-new_session: true
