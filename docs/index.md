@@ -12,7 +12,7 @@ biblio-style: apalike
 url: 'https://github.com/prdm0/aulas_computacional'
 link-citations: yes
 colorlinks: yes
-fontsize: 12pt
+fontsize: 13pt
 monofont: "Source Code Pro"
 description: "Disciplina de Estatística Computacional - Departamento de Estatística"
 ---
@@ -20,23 +20,26 @@ description: "Disciplina de Estatística Computacional - Departamento de Estatí
 
 # {-}
 
-<div class=text-justify>
 **Última atualização**: 21/05/2019 <br/>
 **Departamento de Estatística (UFPB)**: <http://www.de.ufpb.br/> 
 
-----
+---
 
-<div style="background-color:rgba(0, 0, 255, 0.2)">
-Esse material está sob constante aprimoramento e sugestões poderão ser enviadas para a conta do GitHub que hospeda esse material.
+
+
+<p align="center">
+<img src="images/logo_computacional.png" width="200" height="300"/>
+</p>
+
+**Licença**
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />O trabalho <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Curso de Estatística Computacional</span> do <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Prof. Pedro Rafael</span> está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons - Atribuição-NãoComercial 4.0 Internacional</a>.
+
+<br/><br/><br/>
+**Nota**:
+
+<div style="background-color:rgba(255, 165, 0, 0.65)">
+Esse material está sob constante aprimoramento e sugestões poderão ser enviadas para o repositório do [GitHub](https://github.com/prdm0/aulas_computacional) que hospeda o conteúdo. Para isso, basta clicar no ícone no formato de um lápis, no canto superior esquerdo desta página, ou das páginas que se desejam sugerir alterações e escrever as correções de palavras, proposta de mudanças, alteração de códigos de exemplos, etc. As alterações serão bem vindas e serão acatadas a medida que forem julgadas como sendo convenientes.
 </div>
 
-# Prefácio {-}
 
-<div class=text-justify>
-A ementa do curso de **Estatística Computacional** que compõe a estrutura do curso como disciplina obrigatória poderá ser obtida no [link](http://www.de.ufpb.br/graduacao/obrigatorias/EstatisticaComputacional.pdf). Como pode-se observar, a disciplina é dividida no uso de tecnologias (linguagem de marcação e linguagem de programação) e alguns aspectos teóricos que envolvem a teoria da estatística computacional. O bom uso dos conceitos abordados no curso estará alinhado ao perfeito entendimento das tecnologias e teorias apresentadas.
-</div>
-
-<div class=text-justify>
-
-<div style="background-color:rgba(0, 0, 255, 0.2)">
-O tópico referente à tipografia científica em LaTeX não será abordado, visto que esse assunto atualmente está sendo apresentado na disciplina de Metodologia do Trabalho Científico no início do curso. Além disso, o tópico referente à programação em R abordará aspectos mais avançados da linguagem, uma vez que a essa altura do curso, os alunos entendem os conceitos básicos da linguagem.

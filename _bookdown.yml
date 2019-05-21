@@ -1,6 +1,6 @@
 rmd_files: [
   "index.Rmd",
+  "prefacio.Rmd",
 ]
-
 output_dir: "docs"
 new_session: true

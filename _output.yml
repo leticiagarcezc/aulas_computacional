@@ -5,7 +5,7 @@ bookdown::gitbook:
       collapse: none
     edit: 
       link: https://github.com/prdm0/aulas_computacional/%s
-      text: "Edit"
+      text: "Edite o material"
     sharing: 
       github: yes
     toolbar:
