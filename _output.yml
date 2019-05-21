@@ -4,7 +4,7 @@ bookdown::gitbook:
     toc:
       collapse: none
     edit: 
-      link: https://github.com/prdm0/bookComputacional/%s
+      link: https://github.com/prdm0/aulas_computacional/%s
       text: "Edit"
     sharing: 
       github: yes

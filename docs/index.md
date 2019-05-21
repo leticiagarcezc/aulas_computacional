@@ -9,7 +9,7 @@ documentclass: krantz
 always_allow_html: yes
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
-url: 'https://github.com/prdm0/bookComputacional'
+url: 'https://github.com/prdm0/aulas_computacional'
 link-citations: yes
 colorlinks: yes
 fontsize: 12pt
