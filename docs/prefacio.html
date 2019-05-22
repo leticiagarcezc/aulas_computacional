@@ -64,7 +64,11 @@
 
 <ul class="summary">
 <li><a href="index.html#section"></a></li>
-<li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html"><i class="fa fa-check"></i>Prefácio</a></li>
+<li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html"><i class="fa fa-check"></i>Prefácio</a><ul>
+<li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html#tecnologias-abordadas-no-curso"><i class="fa fa-check"></i>Tecnologias abordadas no curso</a></li>
+<li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html#teorias-abordadas-no-curso"><i class="fa fa-check"></i>Teorias abordadas no curso</a></li>
+<li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html#sugestoes-de-passos-para-revisao-da-linguagem-r"><i class="fa fa-check"></i>Sugestões de passos para revisão da linguagem R</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -84,18 +88,101 @@
             <section class="normal" id="section-">
 <div id="prefacio" class="section level1 unnumbered">
 <h1>Prefácio</h1>
-<p>Esse material sempre tentará se adequar à ementa da disciplina de Estatística Computacional, sendo esta uma disciplina obrigatória do curso de bacharelado em estatística do Departamento de Estatística da UFPB.</p>
+<p>Esse material sempre tentará se adequar à ementa da disciplina de Estatística Computacional, sendo esta uma disciplina obrigatória do curso de bacharelado em estatística do Departamento de Estatística da UFPB. Dessa forma, trata-se de um material destinado à alunos do Departamento de Estatística da UFPB. Porém, esse material poderá vir a despertar interesse à outras pessoas que não alunos da instituição.</p>
 <p>A ementa do curso de <strong>Estatística Computacional</strong> que compõe a estrutura do curso como disciplina obrigatória poderá ser obtida no <a href="http://www.de.ufpb.br/graduacao/obrigatorias/EstatisticaComputacional.pdf"><strong>link</strong></a>. Como pode-se observar, a disciplina é dividida no uso de tecnologias (linguagem de marcação e linguagem de programação) e alguns aspectos teóricos que envolvem a teoria da estatística computacional. O bom uso dos conceitos abordados no curso estará alinhado ao perfeito entendimento das tecnologias e teorias apresentadas.</p>
-<div style="background-color:rgba(255, 165, 0, 0.65)">
+
+<div class="rmdimportant">
+<div class="text-justify">
 <p>O tópico referente à tipografia científica em <a href="https://www.latex-project.org/"><strong>LaTeX</strong></a> não será abordado, visto que esse assunto atualmente está sendo apresentado na disciplina de Metodologia do Trabalho Científico no início do curso. Além disso, o tópico referente à programação em <a href="https://www.r-project.org/"><strong>R</strong></a> abordará aspectos mais avançados da linguagem, uma vez que a essa altura do curso, os alunos entendem os conceitos básicos da linguagem <a href="https://www.r-project.org/"><strong>R</strong></a>.</p>
 </div>
-<p><strong>Tecnologias</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Programação em linguagem R;</p></li>
-<li><p>Linguagem de marcação LaTeX.</p></li>
-</ol>
-<p><strong>Teorias</strong></p>
+</div>
 
+<div id="tecnologias-abordadas-no-curso" class="section level2 unnumbered">
+<h2>Tecnologias abordadas no curso</h2>
+<ol style="list-style-type: decimal">
+<li><p>Uso de <a href="https://git-scm.com/"><strong>git</strong></a> e <a href="https://github.com/prdm0/aulas_computacional"><strong>GitHub</strong></a> para versionamento de projetos;</p></li>
+<li><p>Linguagem de programação <a href="https://www.r-project.org/"><strong>R</strong></a> sob um olhar mais avançado:</p></li>
+</ol>
+<ul>
+<li>Orientação à objeto utilizando funções genéricas (sistema S3 de orientação à objeto);</li>
+<li>Sistema de orientação à objeto R6;</li>
+<li>Expressões regulares (<strong>regex</strong>);</li>
+<li>Uso de funcionais. Nessa parte será revisado os funcionais do <strong>base r</strong> bem como serão apresentados novos funcionais;</li>
+<li>Construção de pacotes em R;</li>
+<li>Uso de pacotes que incorporam características novas à linguagem R, entre eles, alguns dos pacotes da comunidade do <a href="https://www.rstudio.com/"><strong>RStudio</strong></a>;</li>
+<li>Conceitos de metaprogramação.</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><p><del>Linguagem de marcação: <a href="https://www.latex-project.org/"><strong>LaTeX</strong></a></del>;</p></li>
+<li><p>Linguagem de marcação: <a href="https://en.wikipedia.org/wiki/Markdown"><strong>markdown</strong></a>;</p></li>
+<li><p>Checando a peformance do código e identificando gargalos.</p></li>
+</ol>
+<p>Em substituição ao item 2, trataremos do <a href="https://rmarkdown.rstudio.com/"><strong>rmardkown</strong></a>, em especial, do uso do pacote <a href="https://bookdown.org/"><strong>bookdown</strong></a> para a construção de relatórios e livros dinâmicos utilizando a linguagem de marcação <a href="https://en.wikipedia.org/wiki/Markdown"><strong>markdown</strong></a>. Por exemplo, esse material foi construído utilizando essas ferramentas.</p>
+<p><strong>Nota</strong>:</p>
+
+<div class="rmdnote">
+<div class="text-justify">
+<p>Um bom material em lingua portuguesa sobre o <a href="https://www.latex-project.org/"><strong>LaTeX</strong></a> poderá ser obtido no <a href="http://www.mat.ufpb.br/lenimar/textos/breve21pdf.zip"><strong>link</strong></a>.</p>
+</div>
+</div>
+
+</div>
+<div id="teorias-abordadas-no-curso" class="section level2 unnumbered">
+<h2>Teorias abordadas no curso</h2>
+<ol style="list-style-type: decimal">
+<li>Geração de números pseudo-aleatórios:</li>
+</ol>
+<ul>
+<li>Método da inversão;</li>
+<li>Método da aceitação-rejeição;</li>
+<li>Método da transformação.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Métodos de Monte Carlo;</p></li>
+<li><p>Métodos de reamostragem:</p></li>
+</ol>
+<ul>
+<li>Jackknife;</li>
+<li>Bootstrap: para estimação de erro-padrão de um estimador, correção de viés, construção de intervalos aleatórios, testes de hipóteses, bootstrap de Wu (bootstrap selvagem). Algumas dessas metodologias serão apresentadas em esquemas simples (um nível de bootstrap) e duplo (dois níveis de bootstrap).</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>Métodos de otimização não-linear em estatística: métodos de Newton e quasi-Newton.</li>
+</ol>
+</div>
+<div id="sugestoes-de-passos-para-revisao-da-linguagem-r" class="section level2 unnumbered">
+<h2>Sugestões de passos para revisão da linguagem R</h2>
+
+<div class="rmdimportant">
+<div class="text-justify">
+<p>É aconselhado que antes de prosseguir nesse material o leitor faça uma revisão básica da linguagem R. Entre os princiapis conceitos necessários para uma boa progressão nesse curso, destacam-se:</p>
+<ol style="list-style-type: decimal">
+<li><p>Entenda as diferenças de funcionamento de um compilador para um interpretador. Lembre-se, <strong>R é uma linguagem interpretada</strong>;</p></li>
+<li><p>Revise os principais tipo de dados: <strong>character</strong>, <strong>double</strong>, <strong>integer</strong> e <strong>logical</strong>. Lembre-se que por regra de coerção, os tipos mais flexíveis em R seguem a seguinte regra de flexibilidade: <strong>character &gt; double &gt; integer &gt; lógico</strong>. Isso quer dizer, por exemplo, que <code>a</code> é um vetor que possui elemtendos do tipo character e double, então todos os elementos do vetor serão coagidos para o tipo mais flexível, nesse caso o tipo character. <strong>Exemplo</strong>: <code>a &lt;- c(1, letters[1:5]); is.character(a[1])</code> retornará <code>TRUE</code>.</p></li>
+<li><p>Lembre-se que R não possui constantes. Constantes são tratadas como vetores atômicos de comprimento 1. Esses são chamados de atômicos por se a estrutura básica da linguagem, uma vez que R é uma linguagem vetorial;</p></li>
+<li><p>Por falar em vetores atômicos / vetores, revise as principais <strong>estruturas de dados</strong> em: vetores atômicos (<code>c()</code>), fatores (<code>factor()</code>), listas (<code>list()</code>), matrizes (<code>matrix()</code>), sequência de matrizes (<code>arrays()</code>), tabelas (<code>data.frames()</code>). Note que uma matriz é um array de comprimento 1. Não confunda estrutura de dados com tipo de dados. Estruturas de dados refere-se ao mecanismo de organização de dados, já o tipo de dados refere-se ao tipo básico das informações que são organizadas nas estruturas de dados;</p></li>
+<li><p>Entenda o uso das funções <code>is.troque()</code> e <code>as.troque()</code>, em que <code>troque</code> poderá ser ser substituido por:</p>
+<ul>
+<li><p><strong>Um Estrutura de dados</strong>: <code>vector</code>, <code>factor</code>, <code>list</code>, <code>numeric</code>, <code>data.frame</code>, <code>matrix</code>, <code>array</code>.</p></li>
+<li><p><strong>Um Tipos de dados</strong>: <code>integer</code>, <code>double</code>, <code>numeric</code>, <code>character</code> e <code>logical</code>.</p></li>
+</ul></li>
+<li><p>Revise os operadores relacionais e lógicos:</p>
+<ul>
+<li><strong>Operadores Relacionais</strong>: <code>==</code>(igual), <code>&lt;</code> (menor), <code>&lt;=</code> (menor ou igual), <code>&gt;</code> (maior), <code>&gt;=</code> (maior ou igual), <code>!=</code> (diferente);</li>
+<li><strong>Operadores Lógicos</strong>: <code>||</code> (<strong>OU</strong> lógico), <code>&amp;&amp;</code> (<strong>E</strong> lógico), <code>!</code> (<strong>NÃO</strong> lógico). Esses são operadores não vetorizados. Versões vetorizadas serão abordadas no decorrer do curso.</br></br></li>
+</ul></li>
+<li><p>Revise as estruturas de condições: <code>if</code>, <code>else</code>, <code>switch</code>, <code>ifelse</code>. A função <code>ifelse</code> equivale à estrutura <code>(condição) ? retorno 1 : retorno 2</code> das linguagens C/C++;</p></li>
+<li><p>Revise as estruturas de repetições: <code>while</code>, <code>for</code> e <code>repeat</code>. Entenda o uso das instruções <code>break</code> e <code>next</code> quando utilizadas dentro dessas estruturas.</p></li>
+<li><p>Revise a construção de funções em R. Tente entender a flexibilidade embutida em funções que retornam uma lista.</p></li>
+<li><p>Se achar necessário, revise algumas funções úteis: <code>length()</code>, <code>sum()</code>, <code>abs()</code>, <code>mean()</code>, <code>median()</code>, <code>var()</code>, <code>sd()</code>, <code>cor()</code>, <code>summary()</code>, <code>sqrt()</code>, <code>exp()</code>, <code>log()</code>, <code>round()</code>, <code>union()</code>, <code>intersect()</code>, <code>choose()</code>, <code>factorial()</code>, <code>dim()</code>, <code>ncol()</code>, <code>nrow()</code>, <code>diag()</code>, <code>%*%</code>, <code>t()</code>, <code>solve()</code>, <code>det()</code>, <code>eigien()</code>, <code>print()</code>, <code>cat()</code>, <code>str()</code>, <code>sort()</code>, <code>quantile()</code>, <code>match()</code> e <code>%in%</code>. Lembre-se que quando os operadores <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%%</code> (módulo / resto da divisão) e <code>^</code> são aplicados ente matrizes, ou entre matrizes e vetores de comprimento 1 (“constantes”), as operações serão realizadas elemento à elemento.</p></li>
+</ol>
+</div>
+</div>
+
+<p>Diversas outras características da linguagem R são importantes e serão lembradas aos poucos na medida que for necessário. Ficará a cargo do leitor fazer as sugestões de revisões acima.</p>
+<p>O capítulo que inicia esse material é dedicado à apresentação de exercício em que o leitor deverá resolver. Trata-se de um capítulo em que os exercícios envolvem as sugestões de revisão da linguagem R apresentadas acima. Os exercícios para serem resolvidos poderão exigir revisões de outros conceitos que não foram listados na proposta de revisão acima. No entanto, se esses exercícios forem bem resolvidos, utilizando-se de boas práticas de programação em R, a leitura desse material será a mais agradável possível.</p>
+<hr />
+
+</div>
 </div>
             </section>
 

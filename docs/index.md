@@ -51,7 +51,7 @@ description: "Disciplina de Estatística Computacional - Departamento de Estatí
 **Observação**:
 
 \BeginKnitrBlock{rmdobservation}<div class="rmdobservation"><div class=text-justify>
-Os códigos que estão presentes nesse material está sobre os termos [**GNU General Public License**](https://www.gnu.org/licenses/gpl-3.0.pt-br.html). Assim, o leitor poderá fazer uso de qualquer código desse material em seus projetos, pacotes, desde que cite a fonte.
+Os códigos que estão presentes nesse material está sobre os termos [**GNU General Public License**](https://www.gnu.org/licenses/gpl-3.0.pt-br.html) ($\geq 3$, versão três ou superior). Assim, o leitor poderá fazer uso de qualquer código desse material em seus projetos, pacotes, desde que cite a fonte.
 </div></div>\EndKnitrBlock{rmdobservation}
 **Importante**:
 
@@ -66,5 +66,4 @@ Uma vez que o material está sendo mantido e versionado no [**GitHub**](https://
 \BeginKnitrBlock{rmdnote}<div class="rmdnote"><div class=text-justify>
 Para que que seja possível propor alterações é necessário que a pessoa saiba utilizar o [**git**](https://git-scm.com/)/[**GitHub**](https://github.com/prdm0/aulas_computacional) e tenha realizado um fork do trabalho em sua conta do [**GitHub**](https://github.com/prdm0/aulas_computacional). Trataremos do uso do [**git**](https://git-scm.com/) e [**GitHub**](https://github.com/prdm0/aulas_computacional) no início desse material.
 </div></div>\EndKnitrBlock{rmdnote}
-
 

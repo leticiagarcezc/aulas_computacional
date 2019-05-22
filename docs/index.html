@@ -110,7 +110,7 @@
 
 <div class="rmdobservation">
 <div class="text-justify">
-<p>Os códigos que estão presentes nesse material está sobre os termos <a href="https://www.gnu.org/licenses/gpl-3.0.pt-br.html"><strong>GNU General Public License</strong></a>. Assim, o leitor poderá fazer uso de qualquer código desse material em seus projetos, pacotes, desde que cite a fonte.</p>
+<p>Os códigos que estão presentes nesse material está sobre os termos <a href="https://www.gnu.org/licenses/gpl-3.0.pt-br.html"><strong>GNU General Public License</strong></a> (<span class="math inline">\(\geq 3\)</span>, versão três ou superior). Assim, o leitor poderá fazer uso de qualquer código desse material em seus projetos, pacotes, desde que cite a fonte.</p>
 </div>
 </div>
 
@@ -185,6 +185,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
