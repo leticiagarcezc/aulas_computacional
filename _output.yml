@@ -4,8 +4,8 @@ bookdown::gitbook:
     toc:
       collapse: none
     edit: 
-      link: https://github.com/prdm0/aulas_computacional/%s
-      text: "Edite o material"
+      link: https://github.com/prdm0/aulas_computacional/edit/master/%s
+      text: "Edite"
     sharing: 
       github: yes
     toolbar:

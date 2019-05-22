@@ -1,6 +1,7 @@
 # Prefácio {-}
 
-<div class=text-justify>
+
+Esse material sempre tentará se adequar à ementa da disciplina de Estatística Computacional, sendo esta uma disciplina obrigatória do curso de bacharelado em estatística do Departamento de Estatística da UFPB.
 
 A ementa do curso de **Estatística Computacional** que compõe a estrutura do curso como disciplina obrigatória poderá ser obtida no [**link**](http://www.de.ufpb.br/graduacao/obrigatorias/EstatisticaComputacional.pdf). Como pode-se observar, a disciplina é dividida no uso de tecnologias (linguagem de marcação e linguagem de programação) e alguns aspectos teóricos que envolvem a teoria da estatística computacional. O bom uso dos conceitos abordados no curso estará alinhado ao perfeito entendimento das tecnologias e teorias apresentadas.
 
@@ -11,6 +12,11 @@ O tópico referente à tipografia científica em [**LaTeX**](https://www.latex-p
 
 **Tecnologias**
 
-1 - 
+1. Programação em linguagem R;
+
+2. Linguagem de marcação LaTeX.
+
+
+
 
 **Teorias**

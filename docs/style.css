@@ -1,3 +1,18 @@
+.rmdnote, .rmdimportant, .rmdobservation {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: #ffe5cc 5px center/3em no-repeat;
+}
+.rmdnote {
+  background-image: url("images/icone_nota.png");
+}
+.rmdimportant {
+  background-image: url("images/icone_importante.png");
+}
+.rmdobservation {
+  background-image: url("images/icone_observacao.png");
+}
+
 p {
   text-align: justify;
 }

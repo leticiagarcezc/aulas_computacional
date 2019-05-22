@@ -9,7 +9,8 @@ documentclass: krantz
 always_allow_html: yes
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
-url: 'https://github.com/prdm0/aulas_computacional'
+url: 'https://prdm0.github.io/aulas_computacional/'
+github-repo: prdm0/aulas_computacional
 link-citations: yes
 colorlinks: yes
 fontsize: 13pt
@@ -45,17 +46,25 @@ description: "Disciplina de Estatística Computacional - Departamento de Estatí
 
 5. Se você remixar, transformar, ou criar a partir do material, tem de distribuir as suas contribuições sob a mesma licença que o original. Sendo assim, não poderá aplicar termos jurídicos ou medidas de caráter tecnológico que restrinjam legalmente outros de fazerem algo que a licença permita. 
 
-**Maiores detalhes sobre a licença em**: <https://creativecommons.org/licenses/by-nc-sa/4.0/>.
+**Maiores detalhes a respeito da licença em**: <https://creativecommons.org/licenses/by-nc-sa/4.0/>.
 
-**Observação**: Os códigos que estão presentes nesse material está sobre os termos [**GNU General Public License**](https://www.gnu.org/licenses/gpl-3.0.pt-br.html). Assim, o leitor poderá fazer uso de qualquer código desse material em seus projetos, pacotes, desde que cite a fonte.
+**Observação**:
 
-<br/><br/>
+\BeginKnitrBlock{rmdobservation}<div class="rmdobservation"><div class=text-justify>
+Os códigos que estão presentes nesse material está sobre os termos [**GNU General Public License**](https://www.gnu.org/licenses/gpl-3.0.pt-br.html). Assim, o leitor poderá fazer uso de qualquer código desse material em seus projetos, pacotes, desde que cite a fonte.
+</div></div>\EndKnitrBlock{rmdobservation}
 **Importante**:
 
-<div style="background-color:rgba(255, 165, 0, 0.65)">
-Esse material está sob constante aprimoramento e sugestões poderão ser enviadas para o repositório do [**GitHub**](https://github.com/prdm0/aulas_computacional) que hospeda o conteúdo ou mesmo por [**e-mail**](pedro.rafael.marinho@gmail.com). 
+\BeginKnitrBlock{rmdimportant}<div class="rmdimportant"><div class=text-justify>
+Esse material está sob constante aprimoramento e sugestões poderão ser enviadas para o repositório do [**GitHub**](https://github.com/prdm0/aulas_computacional) que hospeda o conteúdo ou mesmo por **e-mail**. 
 
-Uma vez que o material está sendo mantido e versionado no [**GitHub**](https://github.com/prdm0/aulas_computacional), as alterações podem ser realizadas diretamente no arquivo fonte, bastando clicar no ícone no formato de um lápis, no canto superior esquerdo desta página, ou das páginas em que se desejam sugerir alterações como correções de palavras, mudanças de parágrafos, alteração de códigos, melhoramento de exemplos, inclusão de novos exemplos, etc. As alterações serão bem vindas e serão acatadas (incorporadas ao arquivo orignal) a medida que forem julgadas como sendo convenientes.
-</div>
+Uma vez que o material está sendo mantido e versionado no [**GitHub**](https://github.com/prdm0/aulas_computacional), as alterações podem ser realizadas diretamente no arquivo fonte do projeto, bastando clicar no ícone no formato de um lápis, no canto superior esquerdo desta página, ou das páginas em que se desejam sugerir alterações como correções de palavras, mudanças de parágrafos, alteração de códigos, melhoramento de exemplos, inclusão de novos exemplos, etc. As alterações serão bem vindas e serão acatadas (incorporadas ao arquivo orignal) a medida que forem julgadas como sendo convenientes.
+</div></div>\EndKnitrBlock{rmdimportant}
+
+**Nota**: 
+
+\BeginKnitrBlock{rmdnote}<div class="rmdnote"><div class=text-justify>
+Para que que seja possível propor alterações é necessário que a pessoa saiba utilizar o [**git**](https://git-scm.com/)/[**GitHub**](https://github.com/prdm0/aulas_computacional) e tenha realizado um fork do trabalho em sua conta do [**GitHub**](https://github.com/prdm0/aulas_computacional). Trataremos do uso do [**git**](https://git-scm.com/) e [**GitHub**](https://github.com/prdm0/aulas_computacional) no início desse material.
+</div></div>\EndKnitrBlock{rmdnote}
 
 
