@@ -29,7 +29,7 @@ description: "Disciplina de Estatística Computacional - Departamento de Estatí
 ---
 
 <p align="center">
-<img src="images/logo_computacional.png" width="200" height="300"/>
+<img src="images/logo_livro.png" width="220" height="350"/>
 </p>
 
 ---

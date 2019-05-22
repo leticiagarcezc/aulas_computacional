@@ -1,3 +1,21 @@
+p {
+  text-align: justify;
+}
+
+.book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active > a {
+    color: #000000;
+    background: 0 0;
+    text-decoration: none;
+    background-color: #FFAF24;
+}
+
+.book .book-summary ul.summary li a:hover {
+
+    background-color: #aaaaaa;
+    color: #000000;
+
+}
+
 p.caption {
   color: #777;
   margin-top: 10px;
@@ -12,7 +30,18 @@ pre {
 pre code {
   white-space: inherit;
 }
-div p {
-  text-align: justify;
-  text-justify: inter-word;
+.book .book-header h1 {
+  opacity: 1;
+  text-align: center;
+}
+
+#header .title {
+  margin-bottom: 0em;
+}
+#header h4.author {
+  margin: 0;
+  color: #666;
+}
+#header h4.author em {
+  font-style: normal;
 }
