@@ -18,7 +18,6 @@ monofont: "Source Code Pro"
 description: "Disciplina de Estatística Computacional - Departamento de Estatística"
 ---
 
-
 # {-}
 
 **Última atualização**: 23/05/2019 <br/>

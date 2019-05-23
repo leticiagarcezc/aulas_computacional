@@ -1,3 +1,0 @@
-# Exercícios para uma revisão da linguagem R
-
-Mesmo que você se considere um programador razoável de R, aconselho que venha resolver a lista de exercícios apresentada adiante. É comum que venhamos esquecer de alguns conceitos da linguagem. Esses exercícios é uma oportunidade que você irá ter de revisar lógica de programação utilizando a linguagem R e consequentemente revisar alguns conceitos importantes da linguagem.

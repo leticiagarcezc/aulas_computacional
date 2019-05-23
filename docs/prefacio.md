@@ -16,7 +16,7 @@ O tópico referente à tipografia científica em [**LaTeX**](https://www.latex-p
 
 2. Linguagem de programação [**R**](https://www.r-project.org/) sob um olhar mais avançado:
   - Orientação à objeto utilizando funções genéricas (sistema S3 de orientação à objeto);
-  - Sistema de orientação à objeto R6;
+  - Sistema R6 de orientação à objeto;
   - Expressões regulares (**regex**);
   - Uso de funcionais. Nessa parte será revisado os funcionais do **base r** bem como serão apresentados novos funcionais;
   - Construção de pacotes em R;
@@ -56,7 +56,7 @@ Um bom material em lingua portuguesa sobre o [**LaTeX**](https://www.latex-proje
 
 4. Métodos de otimização não-linear em estatística: métodos de Newton e quasi-Newton.
 
-## Sugestões de passos para revisão da linguagem R {-}
+## Sugestões de passos para revisão da linguagem R {-#sugestao} 
 
 \BeginKnitrBlock{rmdimportant}<div class="rmdimportant"><div class=text-justify>
 É aconselhado que antes de prosseguir nesse material o leitor faça uma revisão básica da linguagem R. Entre os princiapis conceitos necessários para uma boa progressão nesse curso, destacam-se:
