@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="index.html">
-
+<link rel="next" href="exercicios-para-uma-revisao-da-linguagem-r.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -69,6 +69,7 @@
 <li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html#teorias-abordadas-no-curso"><i class="fa fa-check"></i>Teorias abordadas no curso</a></li>
 <li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html#sugestoes-de-passos-para-revisao-da-linguagem-r"><i class="fa fa-check"></i>Sugestões de passos para revisão da linguagem R</a></li>
 </ul></li>
+<li class="chapter" data-level="1" data-path="exercicios-para-uma-revisao-da-linguagem-r.html"><a href="exercicios-para-uma-revisao-da-linguagem-r.html"><i class="fa fa-check"></i><b>1</b> Exercícios para uma revisão da linguagem R</a></li>
 </ul>
 
       </nav>
@@ -115,7 +116,9 @@
 <ol start="3" style="list-style-type: decimal">
 <li><p><del>Linguagem de marcação: <a href="https://www.latex-project.org/"><strong>LaTeX</strong></a></del>;</p></li>
 <li><p>Linguagem de marcação: <a href="https://en.wikipedia.org/wiki/Markdown"><strong>markdown</strong></a>;</p></li>
-<li><p>Checando a peformance do código e identificando gargalos.</p></li>
+<li><p>Checando a peformance do código e identificando gargalos;</p></li>
+<li><p>Closures;</p></li>
+<li><p>Paralelismo em R <a href="https://pt.wikipedia.org/wiki/OpenMP">(<strong>OpenMP</strong>)</a>.</p></li>
 </ol>
 <p>Em substituição ao item 2, trataremos do <a href="https://rmarkdown.rstudio.com/"><strong>rmardkown</strong></a>, em especial, do uso do pacote <a href="https://bookdown.org/"><strong>bookdown</strong></a> para a construção de relatórios e livros dinâmicos utilizando a linguagem de marcação <a href="https://en.wikipedia.org/wiki/Markdown"><strong>markdown</strong></a>. Por exemplo, esse material foi construído utilizando essas ferramentas.</p>
 <p><strong>Nota</strong>:</p>
@@ -173,7 +176,7 @@
 <li><p>Revise as estruturas de condições: <code>if</code>, <code>else</code>, <code>switch</code>, <code>ifelse</code>. A função <code>ifelse</code> equivale à estrutura <code>(condição) ? retorno 1 : retorno 2</code> das linguagens C/C++;</p></li>
 <li><p>Revise as estruturas de repetições: <code>while</code>, <code>for</code> e <code>repeat</code>. Entenda o uso das instruções <code>break</code> e <code>next</code> quando utilizadas dentro dessas estruturas.</p></li>
 <li><p>Revise a construção de funções em R. Tente entender a flexibilidade embutida em funções que retornam uma lista.</p></li>
-<li><p>Se achar necessário, revise algumas funções úteis: <code>length()</code>, <code>sum()</code>, <code>abs()</code>, <code>mean()</code>, <code>median()</code>, <code>var()</code>, <code>sd()</code>, <code>cor()</code>, <code>summary()</code>, <code>sqrt()</code>, <code>exp()</code>, <code>log()</code>, <code>round()</code>, <code>union()</code>, <code>intersect()</code>, <code>choose()</code>, <code>factorial()</code>, <code>dim()</code>, <code>ncol()</code>, <code>nrow()</code>, <code>diag()</code>, <code>%*%</code>, <code>t()</code>, <code>solve()</code>, <code>det()</code>, <code>eigien()</code>, <code>print()</code>, <code>cat()</code>, <code>str()</code>, <code>sort()</code>, <code>quantile()</code>, <code>match()</code> e <code>%in%</code>. Lembre-se que quando os operadores <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%%</code> (módulo / resto da divisão) e <code>^</code> são aplicados ente matrizes, ou entre matrizes e vetores de comprimento 1 (“constantes”), as operações serão realizadas elemento à elemento.</p></li>
+<li><p>Se achar necessário, revise algumas funções úteis: <code>ls()</code>, <code>rm()</code>, <code>length()</code>, <code>sum()</code>, <code>abs()</code>, <code>mean()</code>, <code>median()</code>, <code>var()</code>, <code>sd()</code>, <code>cor()</code>, <code>summary()</code>, <code>sqrt()</code>, <code>exp()</code>, <code>expm1()</code> (fornece uma boa proximação para <code>exp(x) - 1</code>, quando <code>x</code> é pequeno), <code>log()</code>, <code>log10()</code>, <code>log1p()</code> (fornece uma boa aproximação para <code>log(x+1)</code> quando <code>x</code> é pequeno), <code>round()</code>, <code>union()</code>, <code>intersect()</code>, <code>choose()</code>, <code>factorial()</code>, <code>dim()</code>, <code>ncol()</code>, <code>nrow()</code>, <code>diag()</code>, <code>%*%</code>, <code>t()</code>, <code>solve()</code>, <code>det()</code>, <code>eigen()</code>, <code>print()</code>, <code>cat()</code>, <code>paste()</code>, <code>paste0()</code>, <code>substring()</code>,<code>str()</code>, <code>sort()</code>, <code>quantile()</code>, <code>match()</code> e <code>%in%</code>. Lembre-se que quando os operadores <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%%</code> (módulo / resto da divisão) e <code>^</code> são aplicados ente matrizes, ou entre matrizes e vetores de comprimento 1 (“constantes”), as operações serão realizadas elemento à elemento.</p></li>
 </ol>
 </div>
 </div>
@@ -189,8 +192,8 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="exercicios-para-uma-revisao-da-linguagem-r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

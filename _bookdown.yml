@@ -5,4 +5,6 @@ delete_merged_file: yes
 rmd_files: [
   "index.Rmd",
   "prefacio.Rmd",
+  "revisao_r.Rmd",
+  "rstudio.Rmd",
 ]

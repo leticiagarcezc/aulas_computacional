@@ -21,7 +21,7 @@ description: "Disciplina de Estatística Computacional - Departamento de Estatí
 
 # {-}
 
-**Última atualização**: 22/05/2019 <br/>
+**Última atualização**: 23/05/2019 <br/>
 **Departamento de Estatística (UFPB)**: <http://www.de.ufpb.br/> 
 
 ---

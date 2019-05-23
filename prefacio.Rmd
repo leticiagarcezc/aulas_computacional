@@ -29,8 +29,11 @@ O tópico referente à tipografia científica em [**LaTeX**](https://www.latex-p
 
 4. Linguagem de marcação: [**markdown**](https://en.wikipedia.org/wiki/Markdown);
 
-5. Checando a peformance do código e identificando gargalos.
+5. Checando a peformance do código e identificando gargalos;
 
+6. Closures;
+
+7. Paralelismo em R [(**OpenMP**)](https://pt.wikipedia.org/wiki/OpenMP).
 
 Em substituição ao item 2, trataremos do [**rmardkown**](https://rmarkdown.rstudio.com/), em especial, do uso do pacote [**bookdown**](https://bookdown.org/) para a construção de relatórios e livros dinâmicos utilizando a linguagem de marcação [**markdown**](https://en.wikipedia.org/wiki/Markdown). Por exemplo, esse material foi construído utilizando essas ferramentas.
 
@@ -89,7 +92,7 @@ Um bom material em lingua portuguesa sobre o [**LaTeX**](https://www.latex-proje
 
 9. Revise a construção de funções em R. Tente entender a flexibilidade embutida em funções que retornam uma lista. 
 
-10. Se achar necessário, revise algumas funções úteis: `length()`, `sum()`, `abs()`, `mean()`, `median()`, `var()`, `sd()`, `cor()`, `summary()`, `sqrt()`, `exp()`, `log()`, `round()`, `union()`, `intersect()`, `choose()`, `factorial()`, `dim()`, `ncol()`, `nrow()`, `diag()`, `%*%`, `t()`, `solve()`, `det()`, `eigien()`, `print()`, `cat()`, `str()`, `sort()`, `quantile()`, `match()` e `%in%`. Lembre-se que quando os operadores `+`, `-`, `*`, `/`, `%%` (módulo / resto da divisão) e `^` são aplicados ente matrizes, ou entre matrizes e vetores de comprimento 1 ("constantes"), as operações serão realizadas elemento à elemento.
+10. Se achar necessário, revise algumas funções úteis: `ls()`, `rm()`, `length()`, `sum()`, `abs()`, `mean()`, `median()`, `var()`, `sd()`, `cor()`, `summary()`, `sqrt()`, `exp()`, `expm1()` (fornece uma boa proximação para `exp(x) - 1`, quando `x` é pequeno), `log()`, `log10()`, `log1p()` (fornece uma boa aproximação para `log(x+1)` quando `x` é pequeno), `round()`, `union()`, `intersect()`, `choose()`, `factorial()`, `dim()`, `ncol()`, `nrow()`, `diag()`, `%*%`, `t()`, `solve()`, `det()`, `eigen()`, `print()`, `cat()`, `paste()`, `paste0()`, `substring()`,`str()`, `sort()`, `quantile()`, `match()` e `%in%`. Lembre-se que quando os operadores `+`, `-`, `*`, `/`, `%%` (módulo / resto da divisão) e `^` são aplicados ente matrizes, ou entre matrizes e vetores de comprimento 1 ("constantes"), as operações serão realizadas elemento à elemento.
 </div>
 ```
 Diversas outras características da linguagem R são importantes e serão lembradas aos poucos na medida que for necessário. Ficará a cargo do leitor fazer as sugestões de revisões acima.
