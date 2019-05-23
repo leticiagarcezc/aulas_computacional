@@ -220,6 +220,43 @@ z</code></pre>
 <li><p>Construa uma matriz de avaliações <code>A</code> a de dimensão 30x2, em que a primeira coluna são os nomes dos alunos (<strong>Aluno_1</strong> à <strong>Aluno_30</strong>) e a segunda coluna são as notas de 3 avaliações, por aluno. (<strong>Dica</strong>: para facilitar, gere as avaliações dos alunos de forma aleatória).</p></li>
 <li><p>O que a função <code>dim()</code> retorna quando aplicada à um vetor?</p></li>
 <li><p>Se <code>is.matrix(x)</code> retorna <code>TRUE</code>, o que irá retornar de <code>is.array(x)</code>?</p></li>
+<li><p>Descreva os objetos objetos <code>x1</code>, <code>x2</code> e <code>x3</code>.</p></li>
+</ol>
+<pre class="sourceCode r"><code class="sourceCode r">x1 &lt;-<span class="st"> </span><span class="kw">array</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">5</span>))
+x2 &lt;-<span class="st"> </span><span class="kw">array</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">1</span>))
+x3 &lt;-<span class="st"> </span><span class="kw">array</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, <span class="kw">c</span>(<span class="dv">5</span>, <span class="dv">1</span>, <span class="dv">1</span>))</code></pre>
+<ol start="21" style="list-style-type: decimal">
+<li>Considere o código código abaixo:</li>
+</ol>
+<pre class="sourceCode r"><code class="sourceCode r">df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">x =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>, <span class="dt">y =</span> <span class="kw">c</span>(<span class="st">&quot;a&quot;</span>, <span class="st">&quot;b&quot;</span>, <span class="st">&quot;c&quot;</span>))
+df<span class="op">$</span>y</code></pre>
+<pre><code>## [1] a b c
+## Levels: a b c</code></pre>
+<p>Como podemos observar, <code>df$y</code> retorna um fator com os níveis construídos das strings que compõe a variável <code>y</code>. Como podemos alterar o comportamento do data frame <code>df</code> para que <code>df$y</code> retorne um vetor atômico do tipo character?</p>
+<ol start="22" style="list-style-type: decimal">
+<li>Corrija o código abaixo de modo a que venha funcionar:</li>
+</ol>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data.frame</span>(<span class="dt">x =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>, <span class="dt">y =</span> <span class="kw">list</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">4</span>))</code></pre>
+<pre><code>## Error in (function (..., row.names = NULL, check.rows = FALSE, check.names = TRUE, : arguments imply differing number of rows: 2, 3, 4</code></pre>
+<ol start="23" style="list-style-type: decimal">
+<li>Considere a lista abaixo:</li>
+</ol>
+<pre class="sourceCode r"><code class="sourceCode r">notas &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="kw">c</span>(<span class="fl">7.1</span>, <span class="fl">3.2</span>, <span class="ot">NA</span>), <span class="kw">c</span>(<span class="fl">2.7</span>, <span class="fl">8.8</span>, <span class="fl">10.0</span>),
+              <span class="kw">c</span>(<span class="fl">0.0</span>, <span class="ot">NA</span>, <span class="ot">NA</span>), <span class="kw">c</span>(<span class="fl">7.7</span>, <span class="fl">8.4</span>, <span class="fl">6.3</span>),
+              <span class="kw">c</span>(<span class="fl">3.6</span>, <span class="fl">6.6</span>, <span class="fl">8.1</span>), <span class="kw">c</span>(<span class="ot">NA</span>, <span class="ot">NA</span>, <span class="ot">NA</span>),
+              <span class="kw">c</span>(<span class="fl">7.4</span>, <span class="fl">7.1</span>, <span class="fl">7.3</span>), <span class="kw">c</span>(<span class="fl">10.0</span>, <span class="ot">NA</span>, <span class="fl">7.0</span>),
+              <span class="kw">c</span>(<span class="fl">1.6</span>, <span class="fl">3.2</span>, <span class="fl">5.3</span>), <span class="kw">c</span>(<span class="fl">8.8</span>, <span class="fl">9.2</span>, <span class="fl">8.0</span>))</code></pre>
+<p>Responta os itens abaixo:</p>
+<ol style="list-style-type: decimal">
+<li><p>Atribua nomes (<strong>Aluno_1</strong> à <strong>Aluno_10</strong>) à cada elemento de <code>notas</code>.</p></li>
+<li><p>Crie o vetor <code>status</code> contendo o status dos dez alunos. Considere: <strong>A</strong> (aprovado), <strong>REP</strong> (reprovado), <strong>F</strong> (final). (<strong>Dica</strong>: Construa o vetor <code>status</code> atribuindo literalmente as categorias <strong>A</strong>, <strong>REP</strong> ou <strong>F</strong> para cada aluno, ou seja, não é preciso criar uma função para fazer isso automaticamente. Considere <strong>A</strong> para os alunos com média no intervalo <span class="math inline">\([7, 10]\)</span>, <strong>R</strong> para os alunos com média no intervalo <span class="math inline">\([0, 4)\)</span> e <strong>F</strong> para os alunos com média no intervalo <span class="math inline">\([4, 7)\)</span>).</p></li>
+<li><p>Crie o vetor <code>alunos</code> com os nomes dos alunos.</p></li>
+<li><p>Construa o data frame <code>historico</code> com as variáveis <strong>nomes</strong>, <strong>notas</strong> e <strong>status</strong>.</p></li>
+<li><p>Com base no data frame <code>historico</code>, construa o data frame <code>aprovados</code> com os alunos aprovados. De forma análoga para os demais status.</p></li>
+<li><p>Suponha que o professor está interessado em saber quais alunos foram ou tem alguma chance de assumir o status de aprovado. Construa o data frame <code>bons_alunos</code> com estes alunos.</p></li>
+<li><p>Modifique os nomes das linhas do data frame historico colocando <strong>id_1</strong> na primeira linha e respectivamente ,no mesmo padrão, para as demais linhas.</p></li>
+<li><p>Obtenha por meio do data frame <code>historico</code> um novo data frame (<code>historico_na</code>) com os alunos que deixaram ao menos uma prova para repor.</p></li>
+<li><p>Apenas para os alunos que fizeram as três avaliações, obtenha uma média aritmética das avaliações. Acrescente a variável de nome <strong>media</strong> no data frame <code>historico</code>.</p></li>
 </ol>
 <hr />
 
@@ -277,6 +314,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

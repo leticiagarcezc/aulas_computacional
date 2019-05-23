@@ -101,4 +101,68 @@ search()[(grep("gr", search()))]
 
 19. Se `is.matrix(x)` retorna `TRUE`, o que irá retornar de `is.array(x)`?
 
+20. Descreva os objetos objetos `x1`, `x2` e `x3`. 
+    
+```r
+x1 <- array(1:5, c(1, 1, 5))
+x2 <- array(1:5, c(1, 5, 1))
+x3 <- array(1:5, c(5, 1, 1))
+```
+
+21. Considere o código código abaixo:
+
+
+```r
+df <- data.frame(x = 1:3, y = c("a", "b", "c"))
+df$y
+```
+
+```
+## [1] a b c
+## Levels: a b c
+```
+Como podemos observar, `df$y` retorna um fator com os níveis construídos das strings que compõe a variável `y`. Como podemos alterar o comportamento do data frame `df` para que `df$y` retorne um vetor atômico do tipo character?
+
+22. Corrija o código abaixo de modo a que venha funcionar:
+
+
+```r
+data.frame(x = 1:3, y = list(1:2, 1:3, 1:4))
+```
+
+```
+## Error in (function (..., row.names = NULL, check.rows = FALSE, check.names = TRUE, : arguments imply differing number of rows: 2, 3, 4
+```
+
+23. Considere a lista abaixo:
+
+
+```r
+notas <- list(c(7.1, 3.2, NA), c(2.7, 8.8, 10.0),
+              c(0.0, NA, NA), c(7.7, 8.4, 6.3),
+              c(3.6, 6.6, 8.1), c(NA, NA, NA),
+              c(7.4, 7.1, 7.3), c(10.0, NA, 7.0),
+              c(1.6, 3.2, 5.3), c(8.8, 9.2, 8.0))
+```
+
+Responta os itens abaixo:
+
+  1. Atribua nomes (**Aluno_1** à **Aluno_10**) à cada elemento de `notas`.
+  
+  2. Crie o vetor `status` contendo o status dos dez alunos. Considere: **A** (aprovado), **REP** (reprovado), **F** (final). (**Dica**: Construa o vetor `status` atribuindo literalmente as categorias **A**, **REP** ou **F** para cada aluno, ou seja, não é preciso criar uma função para fazer isso automaticamente. Considere **A** para os alunos com média no intervalo $[7, 10]$, **R** para os alunos com média no intervalo $[0, 4)$ e **F** para os alunos com média no intervalo $[4, 7)$).
+  
+  3. Crie o vetor `alunos` com os nomes dos alunos.
+  
+  4. Construa o data frame `historico` com as variáveis **nomes**, **notas** e **status**. 
+  
+  5. Com base no data frame `historico`, construa o data frame `aprovados` com os alunos aprovados. De forma análoga para os demais status. 
+  
+  6. Suponha que o professor está interessado em saber quais alunos foram ou tem alguma chance de assumir o status de aprovado. Construa o data frame `bons_alunos` com estes alunos.
+  
+  7. Modifique os nomes das linhas do data frame historico colocando **id_1** na primeira linha e respectivamente ,no mesmo padrão, para as demais linhas. 
+  
+  8. Obtenha por meio do data frame `historico` um novo data frame (`historico_na`) com os alunos que deixaram ao menos uma prova para repor.
+  
+  9. Apenas para os alunos que fizeram as três avaliações, obtenha uma média aritmética das avaliações. Acrescente a variável de nome **media** no data frame `historico`.
+  
 -----
