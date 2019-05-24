@@ -276,6 +276,50 @@ df<span class="op">$</span>y</code></pre>
 <li><p>Adicione ao data frame dados duas linhas com a média de todas as variáveis e variâncias, respectivamente.</p></li>
 </ol>
 <hr />
+<ol start="25" style="list-style-type: decimal">
+<li><p>Escreva uma função que retorne o imposto pago por mulheres e por homens, sabendo que as mulheres pagam <span class="math inline">\(10%\)</span> e que os homens pagam <span class="math inline">\(5%\)</span> a mais do que as mulheres.</p></li>
+<li><p>Resolva o exercício anterior utilizando a função <code>switch()</code>.</p></li>
+<li><p>Escreva um programa que retorne a saída baixo:</p></li>
+</ol>
+<pre class="sourceCode r"><code class="sourceCode r">i1 =<span class="st"> </span><span class="dv">1</span>
+i2 =<span class="st"> </span><span class="dv">2</span>
+i3 =<span class="st"> </span><span class="dv">3</span>
+i4 =<span class="st"> </span><span class="dv">4</span>
+i5 =<span class="st"> </span><span class="dv">5</span>
+i6 =<span class="st"> </span><span class="dv">6</span>
+i7 =<span class="st"> </span><span class="dv">7</span></code></pre>
+<p><strong>Dica</strong>: Resolva esse simples exercício de três formas diferentes (usando <code>while</code>, <code>for</code> e <code>repeat</code>).</p>
+<ol start="28" style="list-style-type: decimal">
+<li><p>Utilizando a instrução de repetição <code>for</code> construa um pequeno programa que com base em um vetor de valores no intervalo
+<span class="math inline">\([0, 1]\)</span>, some apenas os valores maiores que 0.7. <strong>Dica</strong>: Para economizar tempo, faça <code>vetor &lt;- runif(n = 1e5, min = 0, max = 1)</code> para gerar o objeto <code>vetor</code>.</p></li>
+<li><p>Resolva o exercício 28 sem utilizar nenhuma instrução de repetição.</p></li>
+<li><p>Avalie o custo computacional dos exercícios anteriores (exercícios 28 e 29) utilizando a função <code>Sys.time()</code>. Discuta o resultado.</p></li>
+<li><p>Escreva um programa em R, utilizando as instruções de loop vistas anteriormente, de modo a fornecer as seguintes estruturas, adepender do valor de <code>n</code>.</p></li>
+</ol>
+<p>Para <span class="math inline">\(n = 1\)</span>:</p>
+<pre><code>*            </code></pre>
+<p>Para <span class="math inline">\(n = 2\)</span>:</p>
+<pre><code>* 
+**</code></pre>
+<p>Para <span class="math inline">\(n = 3\)</span>:</p>
+<pre><code>*
+**
+***</code></pre>
+<p>e assim por diante para outros valores de <span class="math inline">\(n\)</span>. <strong>Dica</strong>: crie uma função <code>tree()</code> que tenha <code>n</code> como argumento.</p>
+<ol start="32" style="list-style-type: decimal">
+<li><p>Resolva o exercício anterior acrescentando mais um argumento à função <code>tree()</code> para que seja possível especificar outro caracter além de <code>*</code>.</p></li>
+<li><p>Modifique o programa da solução do exercício 31, de tal forma que a estrutura obtida seja:</p></li>
+</ol>
+<p>Para <span class="math inline">\(n = 1\)</span>:</p>
+<pre><code>A            </code></pre>
+<p>Para <span class="math inline">\(n = 2\)</span>:</p>
+<pre><code>A 
+BB</code></pre>
+<p>Para <span class="math inline">\(n = 3\)</span>:</p>
+<pre><code>A
+BB
+CCC</code></pre>
+<p>e assim por diante para outros valores de <span class="math inline">\(n\)</span>. <strong>Dica</strong>: Note que <span class="math inline">\(n \leq 26\)</span>. Assim, retorne uma mensagem de advertência se um valor de <span class="math inline">\(n\)</span> inapropriado for informado. Por exemplo, utilize a função <code>stop()</code>.</p>
 
 </div>
 </div>

@@ -174,7 +174,7 @@ Responta os itens abaixo:
 
 Responda os itens abaixo:
 
----
+-----
 
   1. Construa o data frame `dados` utilizando `state.x77`.
 
@@ -193,3 +193,79 @@ Responda os itens abaixo:
   8. Adicione ao data frame dados duas linhas com a média de todas as variáveis e variâncias, respectivamente.
   
 -----
+
+25. Escreva uma função que retorne o imposto pago por mulheres e por homens, sabendo que as mulheres pagam $10%$ e que os homens pagam $5%$ a mais do que as mulheres.
+
+26. Resolva o exercício anterior utilizando a função `switch()`.
+
+27. Escreva um programa que retorne a saída baixo:
+
+```r
+i1 = 1
+i2 = 2
+i3 = 3
+i4 = 4
+i5 = 5
+i6 = 6
+i7 = 7
+```
+
+**Dica**: Resolva esse simples exercício de três formas diferentes (usando `while`, `for` e `repeat`).
+
+28. Utilizando a instrução de repetição `for` construa um pequeno programa que com base em um vetor de valores no intervalo
+$[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar tempo, faça `vetor <- runif(n = 1e5, min = 0, max = 1)` para gerar o objeto `vetor`.
+
+29. Resolva o exercício 28 sem utilizar nenhuma instrução de repetição.
+
+30. Avalie o custo computacional dos exercícios anteriores (exercícios 28 e 29) utilizando a função `Sys.time()`. Discuta o resultado.
+
+31. Escreva um programa em R, utilizando as instruções de loop vistas anteriormente, de modo a fornecer as seguintes estruturas, adepender do valor de `n`.
+
+
+Para $n = 1$:
+
+```
+*            
+```
+
+Para $n = 2$:
+
+```
+* 
+**
+```
+
+Para $n = 3$:
+
+```
+*
+**
+***
+```
+e assim por diante para outros valores de $n$. **Dica**: crie uma função `tree()` que tenha `n` como argumento.
+
+32. Resolva o exercício anterior acrescentando mais um argumento à função `tree()` para que seja possível especificar outro caracter além de `*`. 
+
+33. Modifique o programa da solução do exercício 31, de tal forma que a estrutura obtida seja:
+
+Para $n = 1$:
+
+```
+A            
+```
+
+Para $n = 2$:
+
+```
+A 
+BB
+```
+
+Para $n = 3$:
+
+```
+A
+BB
+CCC
+```
+e assim por diante para outros valores de $n$. **Dica**: Note que $n \leq 26$. Assim, retorne uma mensagem de advertência se um valor de $n$ inapropriado for informado. Por exemplo, utilize a função `stop()`.
