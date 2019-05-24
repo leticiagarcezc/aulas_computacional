@@ -219,6 +219,22 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar temp
 
 30. Avalie o custo computacional dos exercícios anteriores (exercícios 28 e 29) utilizando a função `Sys.time()`. Discuta o resultado.
 
+
+31. Construa um programa que retorne a imagem abaixo. O programa deverá utilizar instruções de laço de resolver o problema.
+
+```
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+```
+
 31. Escreva um programa em R, utilizando as instruções de loop vistas anteriormente, de modo a fornecer as seguintes estruturas, adepender do valor de `n`.
 
 
