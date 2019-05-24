@@ -1,8 +1,8 @@
 # Exercícios para uma revisão da linguagem R 
 
-Mesmo que você se considere um programador razoável de [**R**](https://www.r-project.org/about.html), aconselho que venha resolver a lista de exercícios apresentada adiante. É comum que venhamos esquecer de alguns conceitos da linguagem. Esses exercícios é uma oportunidade que você irá ter de revisar lógica de programação utilizando a linguagem [**R**](https://www.r-project.org/about.html) e consequentemente revisar alguns conceitos importantes da linguagem. Tente fazer esses exercícos após um olhar detalhado das [sugestões][Sugestões de passos para revisão da linguagem R] apresentadas. 
+Mesmo que você se considere um programador razoável de [**R**](https://www.r-project.org/about.html), aconselho que venha resolver a lista de exercícios apresentada adiante. É comum que venhamos esquecer de alguns conceitos de linguagens em que programamos. Esses exercícios é uma oportunidade que você irá ter de revisar lógica de programação utilizando a linguagem [**R**](https://www.r-project.org/about.html) e consequentemente revisar alguns conceitos importantes da linguagem. Tente fazer esses exercícos após um olhar detalhado das [sugestões][Sugestões de passos para revisão da linguagem R] apresentadas. 
 
-As [sugestões de revisão][Sugestões de passos para revisão da linguagem R] sugerem temas bastante simples para quem já programa  um pouco na linguagem [**R**](https://www.r-project.org/about.html). Tais sugestões aliadas com as resoluções desses exercício irão lapidar os conhecimentos necessários e fará com que você necessariamente revise outros assuntos.
+As [sugestões de revisão][Sugestões de passos para revisão da linguagem R] sugerem temas bastante simples para quem já programa  um pouco na linguagem [**R**](https://www.r-project.org/about.html). Tais sugestões aliadas com as resoluções desses exercício irão lapidar os conhecimentos necessários e fará com que você necessariamente revise outros assuntos inseridos nos exercícios.
 
 **Observação**:
 
@@ -220,7 +220,9 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar temp
 30. Avalie o custo computacional dos exercícios anteriores (exercícios 28 e 29) utilizando a função `Sys.time()`. Discuta o resultado.
 
 
-31. Construa um programa que retorne a imagem abaixo. O programa deverá utilizar instruções de laço de resolver o problema.
+31. Construa duas funções que escrevam as imagens abaixo, respectivamente. O programa deverá utilizar instruções de laço de resolver o problema.
+
+**I**:
 
 ```
 **********
@@ -235,7 +237,23 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar temp
 *
 ```
 
-31. Escreva um programa em R, utilizando as instruções de loop vistas anteriormente, de modo a fornecer as seguintes estruturas, adepender do valor de `n`.
+**II**: 
+
+```
+*-*-*-*-*-
+*-*-*-*-*
+*-*-*-*-
+*-*-*-*
+*-*-*-
+*-*-*
+*-*-
+*-*
+*-
+*
+```
+
+
+32. Escreva um programa em R, utilizando as instruções de loop vistas anteriormente, de modo a fornecer as seguintes estruturas, adepender do valor de `n`.
 
 
 Para $n = 1$:
@@ -260,9 +278,9 @@ Para $n = 3$:
 ```
 e assim por diante para outros valores de $n$. **Dica**: crie uma função `tree()` que tenha `n` como argumento.
 
-32. Resolva o exercício anterior acrescentando mais um argumento à função `tree()` para que seja possível especificar outro caracter além de `*`. 
+33. Resolva o exercício anterior acrescentando mais um argumento à função `tree()` para que seja possível especificar outro caracter além de `*`. 
 
-33. Modifique o programa da solução do exercício 31, de tal forma que a estrutura obtida seja:
+34. Modifique o programa da solução do exercício 31, de tal forma que a estrutura obtida seja:
 
 Para $n = 1$:
 
@@ -285,3 +303,38 @@ BB
 CCC
 ```
 e assim por diante para outros valores de $n$. **Dica**: Note que $n \leq 26$. Assim, retorne uma mensagem de advertência se um valor de $n$ inapropriado for informado. Por exemplo, utilize a função `stop()`.
+
+35. Implemente a função `aprox_e()` que retorna uma aproximação para $\mathrm{e}^x$ considerando:
+
+$$\mathrm{e}^x = \sum_{n = 0}^{\infty} \frac{x^n}{n!}.$$
+**Dica**: A função `aprox_e()` deverá receber um argumento em que será utilizado como o número de termos somados.
+
+
+36. Crie a função `aprox_pi()`, fazendo uso de instruções de repetição, que implemente a aproximação abaixo para o valor da constante $\pi$:
+
+$$\pi = 4 - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \frac{4}{9} - \frac{4}{11} + \dots$$
+
+**Dica**: Premita que o usuário de sua função forneça a quantidade de termos a ser considerado na soma. Além disso, faça com que sua função critique valores indevidos para a quantidade de termos somados. 
+
+37. Implemente a função `fib()`, utilizando instruções de repetição, que retorna o Fibonacci de um número. Lembre-se, a sequência de Fibonacci é dada por $1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, \ldots$ . Note que Fibonacci de $n$ é dado por $F_n = F_{n-1} + F_{n-2},\, n > 2$, com $F_1 = 1$ e $F_2 = 1$. Por exemplo, Fibonacci de 5 é dado por $F_5 = F_{4} + F_{3} = 3 + 2 = 5$.
+
+38. Implemente o exercício anterior usando funções recursivas. **Lembre-se**: chamamos de funções recursivas a função que chama a si mesma.
+
+**Um esboço**:
+
+```r
+func_f <- function(...){
+        
+        # Ué? ...
+        # Sim! Estamos chamando a função que estamos criando. ;)
+        func_f(...)
+        
+        # É preciso para em algum momento
+        # somos finitos :)
+        if (contition) break 
+}
+```
+
+39. Implemente a função `aprox_pi()` de forma recursiva.
+
+40. 

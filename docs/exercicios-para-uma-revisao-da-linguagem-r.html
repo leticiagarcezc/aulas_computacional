@@ -155,8 +155,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="exercicios-para-uma-revisao-da-linguagem-r" class="section level1">
 <h1><span class="header-section-number">1</span> Exercícios para uma revisão da linguagem R</h1>
-<p>Mesmo que você se considere um programador razoável de <a href="https://www.r-project.org/about.html"><strong>R</strong></a>, aconselho que venha resolver a lista de exercícios apresentada adiante. É comum que venhamos esquecer de alguns conceitos da linguagem. Esses exercícios é uma oportunidade que você irá ter de revisar lógica de programação utilizando a linguagem <a href="https://www.r-project.org/about.html"><strong>R</strong></a> e consequentemente revisar alguns conceitos importantes da linguagem. Tente fazer esses exercícos após um olhar detalhado das <a href="prefacio.html#sugestoes-de-passos-para-revisao-da-linguagem-r">sugestões</a> apresentadas.</p>
-<p>As <a href="prefacio.html#sugestoes-de-passos-para-revisao-da-linguagem-r">sugestões de revisão</a> sugerem temas bastante simples para quem já programa um pouco na linguagem <a href="https://www.r-project.org/about.html"><strong>R</strong></a>. Tais sugestões aliadas com as resoluções desses exercício irão lapidar os conhecimentos necessários e fará com que você necessariamente revise outros assuntos.</p>
+<p>Mesmo que você se considere um programador razoável de <a href="https://www.r-project.org/about.html"><strong>R</strong></a>, aconselho que venha resolver a lista de exercícios apresentada adiante. É comum que venhamos esquecer de alguns conceitos de linguagens em que programamos. Esses exercícios é uma oportunidade que você irá ter de revisar lógica de programação utilizando a linguagem <a href="https://www.r-project.org/about.html"><strong>R</strong></a> e consequentemente revisar alguns conceitos importantes da linguagem. Tente fazer esses exercícos após um olhar detalhado das <a href="prefacio.html#sugestoes-de-passos-para-revisao-da-linguagem-r">sugestões</a> apresentadas.</p>
+<p>As <a href="prefacio.html#sugestoes-de-passos-para-revisao-da-linguagem-r">sugestões de revisão</a> sugerem temas bastante simples para quem já programa um pouco na linguagem <a href="https://www.r-project.org/about.html"><strong>R</strong></a>. Tais sugestões aliadas com as resoluções desses exercício irão lapidar os conhecimentos necessários e fará com que você necessariamente revise outros assuntos inseridos nos exercícios.</p>
 <p><strong>Observação</strong>:</p>
 
 <div class="rmdobservation">
@@ -294,8 +294,9 @@ i7 =<span class="st"> </span><span class="dv">7</span></code></pre>
 <span class="math inline">\([0, 1]\)</span>, some apenas os valores maiores que 0.7. <strong>Dica</strong>: Para economizar tempo, faça <code>vetor &lt;- runif(n = 1e5, min = 0, max = 1)</code> para gerar o objeto <code>vetor</code>.</p></li>
 <li><p>Resolva o exercício 28 sem utilizar nenhuma instrução de repetição.</p></li>
 <li><p>Avalie o custo computacional dos exercícios anteriores (exercícios 28 e 29) utilizando a função <code>Sys.time()</code>. Discuta o resultado.</p></li>
-<li><p>Construa um programa que retorne a imagem abaixo. O programa deverá utilizar instruções de laço de resolver o problema.</p></li>
+<li><p>Construa duas funções que escrevam as imagens abaixo, respectivamente. O programa deverá utilizar instruções de laço de resolver o problema.</p></li>
 </ol>
+<p><strong>I</strong>:</p>
 <pre><code>**********
 *********
 ********
@@ -306,7 +307,18 @@ i7 =<span class="st"> </span><span class="dv">7</span></code></pre>
 ***
 **
 *</code></pre>
-<ol start="31" style="list-style-type: decimal">
+<p><strong>II</strong>:</p>
+<pre><code>*-*-*-*-*-
+*-*-*-*-*
+*-*-*-*-
+*-*-*-*
+*-*-*-
+*-*-*
+*-*-
+*-*
+*-
+*</code></pre>
+<ol start="32" style="list-style-type: decimal">
 <li>Escreva um programa em R, utilizando as instruções de loop vistas anteriormente, de modo a fornecer as seguintes estruturas, adepender do valor de <code>n</code>.</li>
 </ol>
 <p>Para <span class="math inline">\(n = 1\)</span>:</p>
@@ -319,7 +331,7 @@ i7 =<span class="st"> </span><span class="dv">7</span></code></pre>
 **
 ***</code></pre>
 <p>e assim por diante para outros valores de <span class="math inline">\(n\)</span>. <strong>Dica</strong>: crie uma função <code>tree()</code> que tenha <code>n</code> como argumento.</p>
-<ol start="32" style="list-style-type: decimal">
+<ol start="33" style="list-style-type: decimal">
 <li><p>Resolva o exercício anterior acrescentando mais um argumento à função <code>tree()</code> para que seja possível especificar outro caracter além de <code>*</code>.</p></li>
 <li><p>Modifique o programa da solução do exercício 31, de tal forma que a estrutura obtida seja:</p></li>
 </ol>
@@ -333,6 +345,35 @@ BB</code></pre>
 BB
 CCC</code></pre>
 <p>e assim por diante para outros valores de <span class="math inline">\(n\)</span>. <strong>Dica</strong>: Note que <span class="math inline">\(n \leq 26\)</span>. Assim, retorne uma mensagem de advertência se um valor de <span class="math inline">\(n\)</span> inapropriado for informado. Por exemplo, utilize a função <code>stop()</code>.</p>
+<ol start="35" style="list-style-type: decimal">
+<li>Implemente a função <code>aprox_e()</code> que retorna uma aproximação para <span class="math inline">\(\mathrm{e}^x\)</span> considerando:</li>
+</ol>
+<p><span class="math display">\[\mathrm{e}^x = \sum_{n = 0}^{\infty} \frac{x^n}{n!}.\]</span>
+<strong>Dica</strong>: A função <code>aprox_e()</code> deverá receber um argumento em que será utilizado como o número de termos somados.</p>
+<ol start="36" style="list-style-type: decimal">
+<li>Crie a função <code>aprox_pi()</code>, fazendo uso de instruções de repetição, que implemente a aproximação abaixo para o valor da constante <span class="math inline">\(\pi\)</span>:</li>
+</ol>
+<p><span class="math display">\[\pi = 4 - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \frac{4}{9} - \frac{4}{11} + \dots\]</span></p>
+<p><strong>Dica</strong>: Premita que o usuário de sua função forneça a quantidade de termos a ser considerado na soma. Além disso, faça com que sua função critique valores indevidos para a quantidade de termos somados.</p>
+<ol start="37" style="list-style-type: decimal">
+<li><p>Implemente a função <code>fib()</code>, utilizando instruções de repetição, que retorna o Fibonacci de um número. Lembre-se, a sequência de Fibonacci é dada por <span class="math inline">\(1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, \ldots\)</span> . Note que Fibonacci de <span class="math inline">\(n\)</span> é dado por <span class="math inline">\(F_n = F_{n-1} + F_{n-2},\, n &gt; 2\)</span>, com <span class="math inline">\(F_1 = 1\)</span> e <span class="math inline">\(F_2 = 1\)</span>. Por exemplo, Fibonacci de 5 é dado por <span class="math inline">\(F_5 = F_{4} + F_{3} = 3 + 2 = 5\)</span>.</p></li>
+<li><p>Implemente o exercício anterior usando funções recursivas. <strong>Lembre-se</strong>: chamamos de funções recursivas a função que chama a si mesma.</p></li>
+</ol>
+<p><strong>Um esboço</strong>:</p>
+<pre class="sourceCode r"><code class="sourceCode r">func_f &lt;-<span class="st"> </span><span class="cf">function</span>(...){
+        
+        <span class="co"># Ué? ...</span>
+        <span class="co"># Sim! Estamos chamando a função que estamos criando. ;)</span>
+        <span class="kw">func_f</span>(...)
+        
+        <span class="co"># É preciso para em algum momento</span>
+        <span class="co"># somos finitos :)</span>
+        <span class="cf">if</span> (contition) <span class="cf">break</span> 
+}</code></pre>
+<ol start="39" style="list-style-type: decimal">
+<li><p>Implemente a função <code>aprox_pi()</code> de forma recursiva.</p></li>
+<li></li>
+</ol>
 
 </div>
 </div>
