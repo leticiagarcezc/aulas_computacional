@@ -17,10 +17,15 @@ A google disponibilizou um [guia de estilo](https://google.github.io/styleguide/
 
 1. Responda os itens abaixo:
 
-  - Descreva os principais tipos de dados de R.
-  - Descreva os principais estruturas de dados de R.
-  - Disserte sobre as diferenças entre tipos de dados e estruturas de dados.
-  - Descreva quais estruturas de dados são homogêneas e quais estruturas são heterogêneas.
+-----
+
+  1. Descreva os principais tipos de dados de R.
+  2. Descreva os principais estruturas de dados de R.
+  3. Disserte sobre as diferenças entre tipos de dados e estruturas de dados.
+  4 Descreva quais estruturas de dados são homogêneas e quais estruturas são heterogêneas.
+
+-----
+
 
 2. Explique o por quê das saídas abaixo:
 
