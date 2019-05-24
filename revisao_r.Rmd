@@ -2,7 +2,7 @@
 
 Mesmo que você se considere um programador razoável de [**R**](https://www.r-project.org/about.html), aconselho que venha resolver a lista de exercícios apresentada adiante. É comum que venhamos esquecer de alguns conceitos da linguagem. Esses exercícios é uma oportunidade que você irá ter de revisar lógica de programação utilizando a linguagem [**R**](https://www.r-project.org/about.html) e consequentemente revisar alguns conceitos importantes da linguagem. Tente fazer esses exercícos após um olhar detalhado das [sugestões][Sugestões de passos para revisão da linguagem R] apresentadas. 
 
-As [sugestões de revisão][Sugestões de passos para revisão da linguagem R] sugerem temas bastante simples para quem já programa  um pouco na linguagem [**R**](https://www.r-project.org/about.html). Tais sugestões aliadas com as resoluções desses exercício irá lapidar os conhecimentos necessários e fará com que você necessariamente revise outros conceitos.
+As [sugestões de revisão][Sugestões de passos para revisão da linguagem R] sugerem temas bastante simples para quem já programa  um pouco na linguagem [**R**](https://www.r-project.org/about.html). Tais sugestões aliadas com as resoluções desses exercício irão lapidar os conhecimentos necessários e fará com que você necessariamente revise outros assuntos.
 
 **Observação**:
 
@@ -12,9 +12,10 @@ A google disponibilizou um [guia de estilo](https://google.github.io/styleguide/
 </div>
 ```
 
-## Exercícios propostos {-}
 
 -----
+
+## Exercícios propostos {-}
 
 1. Responda os itens abaixo:
 
@@ -120,6 +121,8 @@ notas <- list(c(7.1, 3.2, NA), c(2.7, 8.8, 10.0),
 
 Responta os itens abaixo:
 
+---
+
   1. Atribua nomes (**Aluno_1** à **Aluno_10**) à cada elemento de `notas`.
   
   2. Crie o vetor `status` contendo o status dos dez alunos. Considere: **A** (aprovado), **REP** (reprovado), **F** (final). (**Dica**: Construa o vetor `status` atribuindo literalmente as categorias **A**, **REP** ou **F** para cada aluno, ou seja, não é preciso criar uma função para fazer isso automaticamente. Considere **A** para os alunos com média no intervalo $[7, 10]$, **R** para os alunos com média no intervalo $[0, 4)$ e **F** para os alunos com média no intervalo $[4, 7)$).
@@ -132,10 +135,34 @@ Responta os itens abaixo:
   
   6. Suponha que o professor está interessado em saber quais alunos foram ou tem alguma chance de assumir o status de aprovado. Construa o data frame `bons_alunos` com estes alunos.
   
-  7. Modifique os nomes das linhas do data frame historico colocando **id_1** na primeira linha e respectivamente ,no mesmo padrão, para as demais linhas. 
+  7. Modifique os nomes das linhas do data frame historico colocando **id_1** na primeira linha e respectivamente, no mesmo padrão, para as demais linhas. 
   
   8. Obtenha por meio do data frame `historico` um novo data frame (`historico_na`) com os alunos que deixaram ao menos uma prova para repor.
   
   9. Apenas para os alunos que fizeram as três avaliações, obtenha uma média aritmética das avaliações. Acrescente a variável de nome **media** no data frame `historico`.
+  
+---
+
+24. Consideremos o conjunto de dados `state.x77` do pacote **datasets** (pacote padrão de R). A base  `state.x77` refere-se à uma matriz de dimensão 50x8 em que cada linha refere-se à um dos 50 estados dos EUA. Consulte as documentações para obter maiores informações.
+
+Responda os itens abaixo:
+
+---
+
+  1. Construa o data frame `dados` utilizando `state.x77`.
+
+  2. Obtenha um data frame de nome `dados_1` com as observações de dados que possua população maior que 4246, isto é, com os estados estadunidenses que possua uma população maior que 4246 (quatro milhões duzentos e quarenta e seis mil). 
+  
+  3. Obtenha o data frame `dados_2` com as observações população maior que 4246 e menores que 8 milhões, isto é, menor que 8000.
+  
+  4. Obtenha o vetor `vetor_est` com os nomes dos estados que obedecem os critérios do item 3.
+  
+  5. Construa o data frame `dados_3` com os estados estadunidenses com população maior que 1.5 vezes a média dos 50 estados considerados. Obtenha o vetor com o nome dos estados que obedecem essa regra.
+
+  6. Construa o data frame `dados_4` com os estados estadunidenses com população maior que duas vezes a mediana dos 50 estados e que tenha uma população com expectativa de vida maior que 71.84 anos.
+  
+  7. Obtenha o data frame `dados_5` com os estados estadunidenses com renda maior que a média nacional, expectativa de vida maior que 72 anos.
+  
+  8. Adicione ao data frame dados duas linhas com a média de todas as variáveis e variâncias, respectivamente.
   
 -----

@@ -130,7 +130,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html"><i class="fa fa-check"></i>Prefácio</a><ul>
 <li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html#tecnologias-abordadas-no-curso"><i class="fa fa-check"></i>Tecnologias abordadas no curso</a></li>
 <li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html#teorias-abordadas-no-curso"><i class="fa fa-check"></i>Teorias abordadas no curso</a></li>
-<li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html#sugestao"><i class="fa fa-check"></i>Sugestões de passos para revisão da linguagem R</a></li>
+<li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html#sugestoes-de-passos-para-revisao-da-linguagem-r"><i class="fa fa-check"></i>Sugestões de passos para revisão da linguagem R</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="exercicios-para-uma-revisao-da-linguagem-r.html"><a href="exercicios-para-uma-revisao-da-linguagem-r.html"><i class="fa fa-check"></i><b>1</b> Exercícios para uma revisão da linguagem R</a><ul>
 <li class="chapter" data-level="" data-path="exercicios-para-uma-revisao-da-linguagem-r.html"><a href="exercicios-para-uma-revisao-da-linguagem-r.html#exercicios-propostos"><i class="fa fa-check"></i>Exercícios propostos</a></li>
@@ -155,8 +155,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="exercicios-para-uma-revisao-da-linguagem-r" class="section level1">
 <h1><span class="header-section-number">1</span> Exercícios para uma revisão da linguagem R</h1>
-<p>Mesmo que você se considere um programador razoável de <a href="https://www.r-project.org/about.html"><strong>R</strong></a>, aconselho que venha resolver a lista de exercícios apresentada adiante. É comum que venhamos esquecer de alguns conceitos da linguagem. Esses exercícios é uma oportunidade que você irá ter de revisar lógica de programação utilizando a linguagem <a href="https://www.r-project.org/about.html"><strong>R</strong></a> e consequentemente revisar alguns conceitos importantes da linguagem. Tente fazer esses exercícos após um olhar detalhado das <a href="prefacio.html#sugestao">sugestões</a> apresentadas.</p>
-<p>As <a href="prefacio.html#sugestao">sugestões de revisão</a> sugerem temas bastante simples para quem já programa um pouco na linguagem <a href="https://www.r-project.org/about.html"><strong>R</strong></a>. Tais sugestões aliadas com as resoluções desses exercício irá lapidar os conhecimentos necessários e fará com que você necessariamente revise outros conceitos.</p>
+<p>Mesmo que você se considere um programador razoável de <a href="https://www.r-project.org/about.html"><strong>R</strong></a>, aconselho que venha resolver a lista de exercícios apresentada adiante. É comum que venhamos esquecer de alguns conceitos da linguagem. Esses exercícios é uma oportunidade que você irá ter de revisar lógica de programação utilizando a linguagem <a href="https://www.r-project.org/about.html"><strong>R</strong></a> e consequentemente revisar alguns conceitos importantes da linguagem. Tente fazer esses exercícos após um olhar detalhado das <a href="prefacio.html#sugestoes-de-passos-para-revisao-da-linguagem-r">sugestões</a> apresentadas.</p>
+<p>As <a href="prefacio.html#sugestoes-de-passos-para-revisao-da-linguagem-r">sugestões de revisão</a> sugerem temas bastante simples para quem já programa um pouco na linguagem <a href="https://www.r-project.org/about.html"><strong>R</strong></a>. Tais sugestões aliadas com as resoluções desses exercício irão lapidar os conhecimentos necessários e fará com que você necessariamente revise outros assuntos.</p>
 <p><strong>Observação</strong>:</p>
 
 <div class="rmdobservation">
@@ -165,9 +165,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 
+<hr />
 <div id="exercicios-propostos" class="section level2 unnumbered">
 <h2>Exercícios propostos</h2>
-<hr />
 <ol style="list-style-type: decimal">
 <li>Responda os itens abaixo:</li>
 </ol>
@@ -247,6 +247,7 @@ df<span class="op">$</span>y</code></pre>
               <span class="kw">c</span>(<span class="fl">7.4</span>, <span class="fl">7.1</span>, <span class="fl">7.3</span>), <span class="kw">c</span>(<span class="fl">10.0</span>, <span class="ot">NA</span>, <span class="fl">7.0</span>),
               <span class="kw">c</span>(<span class="fl">1.6</span>, <span class="fl">3.2</span>, <span class="fl">5.3</span>), <span class="kw">c</span>(<span class="fl">8.8</span>, <span class="fl">9.2</span>, <span class="fl">8.0</span>))</code></pre>
 <p>Responta os itens abaixo:</p>
+<hr />
 <ol style="list-style-type: decimal">
 <li><p>Atribua nomes (<strong>Aluno_1</strong> à <strong>Aluno_10</strong>) à cada elemento de <code>notas</code>.</p></li>
 <li><p>Crie o vetor <code>status</code> contendo o status dos dez alunos. Considere: <strong>A</strong> (aprovado), <strong>REP</strong> (reprovado), <strong>F</strong> (final). (<strong>Dica</strong>: Construa o vetor <code>status</code> atribuindo literalmente as categorias <strong>A</strong>, <strong>REP</strong> ou <strong>F</strong> para cada aluno, ou seja, não é preciso criar uma função para fazer isso automaticamente. Considere <strong>A</strong> para os alunos com média no intervalo <span class="math inline">\([7, 10]\)</span>, <strong>R</strong> para os alunos com média no intervalo <span class="math inline">\([0, 4)\)</span> e <strong>F</strong> para os alunos com média no intervalo <span class="math inline">\([4, 7)\)</span>).</p></li>
@@ -254,9 +255,25 @@ df<span class="op">$</span>y</code></pre>
 <li><p>Construa o data frame <code>historico</code> com as variáveis <strong>nomes</strong>, <strong>notas</strong> e <strong>status</strong>.</p></li>
 <li><p>Com base no data frame <code>historico</code>, construa o data frame <code>aprovados</code> com os alunos aprovados. De forma análoga para os demais status.</p></li>
 <li><p>Suponha que o professor está interessado em saber quais alunos foram ou tem alguma chance de assumir o status de aprovado. Construa o data frame <code>bons_alunos</code> com estes alunos.</p></li>
-<li><p>Modifique os nomes das linhas do data frame historico colocando <strong>id_1</strong> na primeira linha e respectivamente ,no mesmo padrão, para as demais linhas.</p></li>
+<li><p>Modifique os nomes das linhas do data frame historico colocando <strong>id_1</strong> na primeira linha e respectivamente, no mesmo padrão, para as demais linhas.</p></li>
 <li><p>Obtenha por meio do data frame <code>historico</code> um novo data frame (<code>historico_na</code>) com os alunos que deixaram ao menos uma prova para repor.</p></li>
 <li><p>Apenas para os alunos que fizeram as três avaliações, obtenha uma média aritmética das avaliações. Acrescente a variável de nome <strong>media</strong> no data frame <code>historico</code>.</p></li>
+</ol>
+<hr />
+<ol start="24" style="list-style-type: decimal">
+<li>Consideremos o conjunto de dados <code>state.x77</code> do pacote <strong>datasets</strong> (pacote padrão de R). A base <code>state.x77</code> refere-se à uma matriz de dimensão 50x8 em que cada linha refere-se à um dos 50 estados dos EUA. Consulte as documentações para obter maiores informações.</li>
+</ol>
+<p>Responda os itens abaixo:</p>
+<hr />
+<ol style="list-style-type: decimal">
+<li><p>Construa o data frame <code>dados</code> utilizando <code>state.x77</code>.</p></li>
+<li><p>Obtenha um data frame de nome <code>dados_1</code> com as observações de dados que possua população maior que 4246, isto é, com os estados estadunidenses que possua uma população maior que 4246 (quatro milhões duzentos e quarenta e seis mil).</p></li>
+<li><p>Obtenha o data frame <code>dados_2</code> com as observações população maior que 4246 e menores que 8 milhões, isto é, menor que 8000.</p></li>
+<li><p>Obtenha o vetor <code>vetor_est</code> com os nomes dos estados que obedecem os critérios do item 3.</p></li>
+<li><p>Construa o data frame <code>dados_3</code> com os estados estadunidenses com população maior que 1.5 vezes a média dos 50 estados considerados. Obtenha o vetor com o nome dos estados que obedecem essa regra.</p></li>
+<li><p>Construa o data frame <code>dados_4</code> com os estados estadunidenses com população maior que duas vezes a mediana dos 50 estados e que tenha uma população com expectativa de vida maior que 71.84 anos.</p></li>
+<li><p>Obtenha o data frame <code>dados_5</code> com os estados estadunidenses com renda maior que a média nacional, expectativa de vida maior que 72 anos.</p></li>
+<li><p>Adicione ao data frame dados duas linhas com a média de todas as variáveis e variâncias, respectivamente.</p></li>
 </ol>
 <hr />
 

@@ -8,6 +8,8 @@ A ementa do curso de **Estatística Computacional** que compõe a estrutura do c
 
 \BeginKnitrBlock{rmdimportant}<div class="rmdimportant"><div class=text-justify>
 O tópico referente à tipografia científica em [**LaTeX**](https://www.latex-project.org/) não será abordado, visto que esse assunto atualmente está sendo apresentado na disciplina de Metodologia do Trabalho Científico no início do curso. Além disso, o tópico referente à programação em [**R**](https://www.r-project.org/) abordará aspectos mais avançados da linguagem, uma vez que a essa altura do curso, os alunos entendem os conceitos básicos da linguagem [**R**](https://www.r-project.org/).
+
+Sendo assim, esse não é o material adequado para você, caso o seu enteresse seja aprender a linguagem de programação [**R**](https://www.r-project.org/). Em um futuro próximo, quando este material estiver concluído e caso você já considere um usuário avançado de [**R**](https://www.r-project.org/), talvez pular para os assuntos referentes à estatística computacional venha ser mais produtivo para o seu aprendizado.
 </div></div>\EndKnitrBlock{rmdimportant}
 
 ## Tecnologias abordadas no curso {-}
@@ -56,7 +58,7 @@ Um bom material em lingua portuguesa sobre o [**LaTeX**](https://www.latex-proje
 
 4. Métodos de otimização não-linear em estatística: métodos de Newton e quasi-Newton.
 
-## Sugestões de passos para revisão da linguagem R {-#sugestao} 
+## Sugestões de passos para revisão da linguagem R {-} 
 
 \BeginKnitrBlock{rmdimportant}<div class="rmdimportant"><div class=text-justify>
 É aconselhado que antes de prosseguir nesse material o leitor faça uma revisão básica da linguagem R. Entre os princiapis conceitos necessários para uma boa progressão nesse curso, destacam-se:
