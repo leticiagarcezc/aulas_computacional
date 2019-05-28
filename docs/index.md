@@ -1,7 +1,7 @@
 --- 
 knit: "bookdown::render_book"
 title: "ESTATÍSTICA COMPUTACIONAL"
-subtitle: "Disciplina lecionada para o bacharelado em estatística da UFPB"
+subtitle: "Disciplina ministrada para os alunos do bacharelado em estatística da UFPB"
 author: "**Docente**: Prof. Dr. Pedro Rafael Diniz Marinho <br/> **E-mail**: <pedro.rafael.marinho@gmail.com> / <pedro@de.ufpb.br> <br/> **Perído Letivo**: 2019.1"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -20,7 +20,7 @@ description: "Disciplina de Estatística Computacional - Departamento de Estatí
 
 # {-}
 
-**Última atualização**: 24/05/2019 <br/>
+**Última atualização**: 28/05/2019 <br/>
 **Departamento de Estatística (UFPB)**: <http://www.de.ufpb.br/> 
 
 ---
