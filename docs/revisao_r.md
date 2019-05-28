@@ -196,6 +196,42 @@ A google disponibilizou um [guia de estilo](https://google.github.io/styleguide/
 
 26. Resolva o exercício anterior utilizando a função `switch()`.
 
+27. Escreva a função `celtofar()` que converte um vetor de temperaturas em graus Celsius para graus Fahrenheit. Considere:
+
+$$F = 1.8 * C + 32,$$
+    em que $C$ é a temperatura em graus Celsius e $F$ é a temperatura em graus Fahrenheit. 
+
+28. Melhore a função `celtofar()` para que critique valores não válidos de temperatura.
+
+29. Modifique a função `celtofar()` para que funcione também para conversões no sentido oposto, isto é, converta de graus Fahrenheit para graus Celsius.
+
+30. Construa a função `imc()` que calcula o IMC (Índice de Massa Corporal) de uma pessoa. A função deverá retornar o IMC e um status. Observe que: 
+
+    $$\mathrm{IMC} = \frac{\mathrm{peso}}{\mathrm{altura}^2},$$
+    em que $\mathrm{peso}$ é dado em $kg$ e a $\mathrm{altura}$ é fornecida em $cm$.
+
+    Alem disso, considere:
+
+    -------------------------------------------------
+    IMC               Status        
+    ---------------   -------------------------------
+    $< 17.0$          Muito abaixo do peso
+
+    $[17.0; 18.5)$    Abaixo do peso
+
+    $[18.5; 25.0)$    Peso normal
+
+    $[25.0; 30.0)$    Acima do peso
+
+    $[30.0; 35.0)$    Obesidade nível I
+
+    $[35.0; 40.0)$    Obesidade nível II (severa)
+
+    $\geq 40.0$       Obesidade nível III (mórbida)
+    -------------------------------------------------
+
+    **Dica**: Uma função robusta deverá tratar problemas com a entrada, isto é, deverá criticar informações inconsistentes passadas como argumento.
+
 27. Escreva um programa que retorne a saída baixo:
 
     ```r
@@ -219,7 +255,7 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar temp
 
 31. Construa duas funções que escrevam as imagens abaixo, respectivamente. O programa deverá utilizar instruções de laço de resolver o problema.
 
-    **A primeira função deverá imprimir:**:
+    **A primeira função deverá imprimir**:
 
     ```
     **********
@@ -332,5 +368,19 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar temp
     ```
 
 39. Implemente a função `aprox_pi()` de forma recursiva.
+
+
+40. Implementa a função `nachange(df)`, em que `df` recebe um data frame / matriz. A função `nachange()` deverá trocar `NA` pelo character "?". **Dica**: Em caso de `df` não possuir nenhum elemento `NA`, a função `nachange()` deverá retornar o objeto passado para `df`. 
+
+39. Construa a função `searchindf(df, value)`, em que `df` é um data frame / matriz e `value` é um vetor de uma única posição. A função `searchindf()`deverá retorna **TRUE** se o valor passado para `value` é encontrado em alguma posição do data frame passado para `df` e **FALSE** caso contrário. **Dica**: Tente construir a função de forma mais robusta possível. Por exemplo, considere criticar os argumentos caso estes não sejam de estrutura de dados correta. **Você não poderá utilizar funções já implementadas em R para esse finalidade**.
+
+40. Construa a função `namecolsort(df)`, em que `df` recebe como argumento um data frame/matriz. A função `namecolsort()` deverá retorna o data frame / matriz com as colunas ordenadas. **Dica**: Ordene as colunas considerando o primeiro caracter do nome da coluna.
+    
+
+41. Escreva a função `exclusive(df)`, em que `df`recebe como argumento um data frame/matriz. A função `exclusive()` deverá retornar a posição das linhas exclusivas, ou seja, as linhas que não possuem elementos repetidos.
+
+42. Escreva uma função `extremeindex(df, max = TRUE)`, em que `df`recebe como primeiro argumento um data frame/matriz. A função `maxindex()` deverá retornar a posição (linha, coluna) do valor máximo no objeto passado para `df`, caso `max = TRUE`. Em caso de `max = FALSE`,  a função `maxindex()` deverá retornar a posição (linha, coluna) do valor mínimo no objeto passado para `df`. **Dica**: A função `maxindex()` deverá retornar um vetor em que o primeiro elemento refere-se à linha e o segundo informa a coluna do elemento encontrado (máximo/mínimo).
+
+43. Implemente a função `myt(df)`, em que `df`recebe como argumento um data frame/matriz. A função `myt()` deverá girar em 90 graus a matriz/data frame passado para `df`. **Dica**: Não utilize a função `t()` para transpor uma matriz.
 
 

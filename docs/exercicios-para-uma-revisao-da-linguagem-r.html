@@ -256,6 +256,60 @@ df<span class="op">$</span>y</code></pre>
 </ol></li>
 <li><p>Escreva uma função que retorne o imposto pago por mulheres e por homens, sabendo que as mulheres pagam <span class="math inline">\(10%\)</span> e que os homens pagam <span class="math inline">\(5%\)</span> a mais do que as mulheres.</p></li>
 <li><p>Resolva o exercício anterior utilizando a função <code>switch()</code>.</p></li>
+<li><p>Escreva a função <code>celtofar()</code> que converte um vetor de temperaturas em graus Celsius para graus Fahrenheit. Considere:</p></li>
+</ol>
+<p><span class="math display">\[F = 1.8 * C + 32,\]</span>
+em que <span class="math inline">\(C\)</span> é a temperatura em graus Celsius e <span class="math inline">\(F\)</span> é a temperatura em graus Fahrenheit.</p>
+<ol start="28" style="list-style-type: decimal">
+<li><p>Melhore a função <code>celtofar()</code> para que critique valores não válidos de temperatura.</p></li>
+<li><p>Modifique a função <code>celtofar()</code> para que funcione também para conversões no sentido oposto, isto é, converta de graus Fahrenheit para graus Celsius.</p></li>
+<li><p>Construa a função <code>imc()</code> que calcula o IMC (Índice de Massa Corporal) de uma pessoa. A função deverá retornar o IMC e um status. Observe que:</p>
+<p><span class="math display">\[\mathrm{IMC} = \frac{\mathrm{peso}}{\mathrm{altura}^2},\]</span>
+em que <span class="math inline">\(\mathrm{peso}\)</span> é dado em <span class="math inline">\(kg\)</span> e a <span class="math inline">\(\mathrm{altura}\)</span> é fornecida em <span class="math inline">\(cm\)</span>.</p>
+<p>Alem disso, considere:</p>
+<table style="width:69%;">
+<colgroup>
+<col width="25%" />
+<col width="44%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">IMC</th>
+<th align="left">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(&lt; 17.0\)</span></td>
+<td align="left">Muito abaixo do peso</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\([17.0; 18.5)\)</span></td>
+<td align="left">Abaixo do peso</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\([18.5; 25.0)\)</span></td>
+<td align="left">Peso normal</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\([25.0; 30.0)\)</span></td>
+<td align="left">Acima do peso</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\([30.0; 35.0)\)</span></td>
+<td align="left">Obesidade nível I</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\([35.0; 40.0)\)</span></td>
+<td align="left">Obesidade nível II (severa)</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\geq 40.0\)</span></td>
+<td align="left">Obesidade nível III (mórbida)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Dica</strong>: Uma função robusta deverá tratar problemas com a entrada, isto é, deverá criticar informações inconsistentes passadas como argumento.</p></li>
 <li><p>Escreva um programa que retorne a saída baixo:</p>
 <pre class="sourceCode r"><code class="sourceCode r">i1 =<span class="st"> </span><span class="dv">1</span>
 i2 =<span class="st"> </span><span class="dv">2</span> 
@@ -270,7 +324,7 @@ i7 =<span class="st"> </span><span class="dv">7</span></code></pre>
 <li><p>Resolva o exercício 28 sem utilizar nenhuma instrução de repetição.</p></li>
 <li><p>Avalie o custo computacional dos exercícios anteriores (exercícios 28 e 29) utilizando a função <code>Sys.time()</code>. Discuta o resultado.</p></li>
 <li><p>Construa duas funções que escrevam as imagens abaixo, respectivamente. O programa deverá utilizar instruções de laço de resolver o problema.</p>
-<p><strong>A primeira função deverá imprimir:</strong>:</p>
+<p><strong>A primeira função deverá imprimir</strong>:</p>
 <pre><code>**********
 *********
 ********
@@ -335,6 +389,12 @@ CCC</code></pre>
    <span class="cf">if</span> (contition) <span class="cf">break</span> 
 }</code></pre></li>
 <li><p>Implemente a função <code>aprox_pi()</code> de forma recursiva.</p></li>
+<li><p>Implementa a função <code>nachange(df)</code>, em que <code>df</code> recebe um data frame / matriz. A função <code>nachange()</code> deverá trocar <code>NA</code> pelo character “?”. <strong>Dica</strong>: Em caso de <code>df</code> não possuir nenhum elemento <code>NA</code>, a função <code>nachange()</code> deverá retornar o objeto passado para <code>df</code>.</p></li>
+<li><p>Construa a função <code>searchindf(df, value)</code>, em que <code>df</code> é um data frame / matriz e <code>value</code> é um vetor de uma única posição. A função <code>searchindf()</code>deverá retorna <strong>TRUE</strong> se o valor passado para <code>value</code> é encontrado em alguma posição do data frame passado para <code>df</code> e <strong>FALSE</strong> caso contrário. <strong>Dica</strong>: Tente construir a função de forma mais robusta possível. Por exemplo, considere criticar os argumentos caso estes não sejam de estrutura de dados correta. <strong>Você não poderá utilizar funções já implementadas em R para esse finalidade</strong>.</p></li>
+<li><p>Construa a função <code>namecolsort(df)</code>, em que <code>df</code> recebe como argumento um data frame/matriz. A função <code>namecolsort()</code> deverá retorna o data frame / matriz com as colunas ordenadas. <strong>Dica</strong>: Ordene as colunas considerando o primeiro caracter do nome da coluna.</p></li>
+<li><p>Escreva a função <code>exclusive(df)</code>, em que <code>df</code>recebe como argumento um data frame/matriz. A função <code>exclusive()</code> deverá retornar a posição das linhas exclusivas, ou seja, as linhas que não possuem elementos repetidos.</p></li>
+<li><p>Escreva uma função <code>extremeindex(df, max = TRUE)</code>, em que <code>df</code>recebe como primeiro argumento um data frame/matriz. A função <code>maxindex()</code> deverá retornar a posição (linha, coluna) do valor máximo no objeto passado para <code>df</code>, caso <code>max = TRUE</code>. Em caso de <code>max = FALSE</code>, a função <code>maxindex()</code> deverá retornar a posição (linha, coluna) do valor mínimo no objeto passado para <code>df</code>. <strong>Dica</strong>: A função <code>maxindex()</code> deverá retornar um vetor em que o primeiro elemento refere-se à linha e o segundo informa a coluna do elemento encontrado (máximo/mínimo).</p></li>
+<li><p>Implemente a função <code>myt(df)</code>, em que <code>df</code>recebe como argumento um data frame/matriz. A função <code>myt()</code> deverá girar em 90 graus a matriz/data frame passado para <code>df</code>. <strong>Dica</strong>: Não utilize a função <code>t()</code> para transpor uma matriz.</p></li>
 </ol>
 
 </div>
