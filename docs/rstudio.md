@@ -1,1 +1,1 @@
-# Utilizando melhor o RStudio
+# IDEs de programação em R
