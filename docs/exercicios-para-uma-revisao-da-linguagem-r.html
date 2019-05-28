@@ -136,7 +136,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="exercicios-para-uma-revisao-da-linguagem-r.html"><a href="exercicios-para-uma-revisao-da-linguagem-r.html#exercicios-propostos"><i class="fa fa-check"></i>Exercícios propostos</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="evangelizando-para-o-uso-do-linux.html"><a href="evangelizando-para-o-uso-do-linux.html"><i class="fa fa-check"></i><b>2</b> Evangelizando para o uso do Linux</a></li>
-<li class="chapter" data-level="3" data-path="utilizando-melhor-o-rstudio.html"><a href="utilizando-melhor-o-rstudio.html"><i class="fa fa-check"></i><b>3</b> Utilizando melhor o RStudio</a></li>
+<li class="chapter" data-level="3" data-path="ides-de-programacao-em-r.html"><a href="ides-de-programacao-em-r.html"><i class="fa fa-check"></i><b>3</b> IDEs de programação em R</a></li>
 </ul>
 
       </nav>
@@ -396,6 +396,9 @@ CCC</code></pre>
 <li><p>Escreva a função <code>exclusive(df)</code>, em que <code>df</code>recebe como argumento um data frame/matriz. A função <code>exclusive()</code> deverá retornar a posição das linhas exclusivas, ou seja, as linhas que não possuem elementos repetidos.</p></li>
 <li><p>Escreva uma função <code>extremeindex(df, max = TRUE)</code>, em que <code>df</code>recebe como primeiro argumento um data frame/matriz. A função <code>maxindex()</code> deverá retornar a posição (linha, coluna) do valor máximo no objeto passado para <code>df</code>, caso <code>max = TRUE</code>. Em caso de <code>max = FALSE</code>, a função <code>maxindex()</code> deverá retornar a posição (linha, coluna) do valor mínimo no objeto passado para <code>df</code>. <strong>Dica</strong>: A função <code>maxindex()</code> deverá retornar um vetor em que o primeiro elemento refere-se à linha e o segundo informa a coluna do elemento encontrado (máximo/mínimo).</p></li>
 <li><p>Implemente a função <code>myt(df)</code>, em que <code>df</code>recebe como argumento um data frame/matriz. A função <code>myt()</code> deverá girar em 90 graus a matriz/data frame passado para <code>df</code>. <strong>Dica</strong>: Não utilize a função <code>t()</code> para transpor uma matriz.</p></li>
+<li><p>Crie a função <code>anagram(x, y)</code> que recebe dois argumentos (duas strings). A função <code>anagram()</code> deverá retornar <strong>TRUE</strong> se uma palavra (string) é anagrama da outra e <strong>FALSE</strong> em situação contrária. A função deverá considerar que ambas as strings possui a mesma quantidade de caracteres. Caso a quantidade de caracteres não seja igual em ambas as strings, a função deverá parar e advertir o usuário. <strong>Dica</strong>: Você poderá utilizar a função <code>strsplit()</code>.</p></li>
+<li><p>Implemente a função <code>strposition(x)</code> que dado uma palavra (string) fromada por letras do alfabeto Romano e passada como argumento para <code>x</code>, retorne a posição das letras em um vetor. Por exemplo, a string (palavra) <strong>cada</strong> passada para a função fará com que <code>strposition()</code> retorne o vetor formados pelos elementos 3, 1, 4 e 1. <strong>Dica</strong>: A função <strong>não</strong> poderá aceitar strings que são formadas por pelo menos um caracter que não seja uma letra do alfabeto Romano.</p></li>
+<li><p>Altere a função <code>strposition(x)</code> para que em situação da string possuir um ou mais caracteres não pertencentes ao alfabeto Romano, o retono seja<code>NA</code>, nas respectivas posições destes caracteres.</p></li>
 </ol>
 
 </div>

@@ -383,4 +383,8 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar temp
 
 43. Implemente a função `myt(df)`, em que `df`recebe como argumento um data frame/matriz. A função `myt()` deverá girar em 90 graus a matriz/data frame passado para `df`. **Dica**: Não utilize a função `t()` para transpor uma matriz.
 
+44. Crie a função `anagram(x, y)` que recebe dois argumentos (duas strings). A função `anagram()` deverá retornar **TRUE** se uma palavra (string) é anagrama da outra e **FALSE** em situação contrária. A função deverá considerar que ambas as strings possui a mesma quantidade de caracteres. Caso a quantidade de caracteres não seja igual em ambas as strings, a função deverá parar e advertir o usuário. **Dica**: Você poderá utilizar a função `strsplit()`. 
 
+45. Implemente a função `strposition(x)` que dado uma palavra (string) fromada por letras do alfabeto Romano e passada como argumento para `x`, retorne a posição das letras em um vetor. Por exemplo, a string (palavra) **cada** passada para a função fará com que `strposition()` retorne o vetor formados pelos elementos 3, 1, 4 e 1. **Dica**: A função **não** poderá aceitar strings que são formadas por pelo menos um caracter que não seja uma letra do alfabeto Romano.
+
+46. Altere a função `strposition(x)` para que em situação da string possuir um ou mais caracteres não pertencentes ao alfabeto Romano, o retono seja`NA`, nas respectivas posições destes caracteres.
