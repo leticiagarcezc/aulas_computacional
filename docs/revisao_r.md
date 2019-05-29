@@ -253,6 +253,11 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar temp
 
 30. Avalie o custo computacional dos exercícios anteriores (exercícios 28 e 29) utilizando a função `Sys.time()`. Discuta o resultado.
 
+
+31. Sem utilizar a capacidade de vetorização da linguagem R, implemente a função `myvar(x)` que retorna a variância amostral de um vetor passado como argumetno à `x`. **Dica**: Não utilizar vetorização da linguagem quer dizer que você não poderá aplicar uma função à todos elementos de um vetor. Por exemplo, se `x`é um vetor, você não poderá fazer `x^2`, `sqrt(x)` ou `mean(x)`. Aplique a função a cada posição do vetor utilizando estruturas de repetições. **Nota**: Em seus projetos reais, utilize a capacidade de vetorização da linguagem e evite o quanto der as estruturas de repetições. Isso fará com que os seus códigos sejam mais eficientes. Aqui apenas queremos exercitar o uso de estruturas de repetições.
+
+32. Se `x`, na função `myvar()`, for um vetor não numérico? E se `x` for um vetor com observações **Not Available** `NA`?  Proponha melhorias da função `myvar()` que possa tratar melhor essas situações.
+
 31. Construa duas funções que escrevam as imagens abaixo, respectivamente. O programa deverá utilizar instruções de laço de resolver o problema.
 
     **A primeira função deverá imprimir**:
