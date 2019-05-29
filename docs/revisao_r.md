@@ -267,12 +267,39 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar temp
 
 30. Avalie o custo computacional dos exercícios anteriores (exercícios 28 e 29) utilizando a função `Sys.time()`. Discuta o resultado.
 
+31. Construa a função `central(x)` que recebe como argumeto um vetor passado para `x` e retorna algumas medidas de tendência central. A função `central()` deverá retornar:
 
-31. Sem utilizar a capacidade de vetorização da linguagem R, implemente a função `myvar(x)` que retorna a variância amostral de um vetor passado como argumetno à `x`. **Dica**: Não utilizar vetorização da linguagem quer dizer que você não poderá aplicar uma função à todos elementos de um vetor. Por exemplo, se `x`é um vetor, você não poderá fazer `x^2`, `sqrt(x)` ou `mean(x)`. Aplique a função a cada posição do vetor utilizando estruturas de repetições. **Nota**: Em seus projetos reais, utilize a capacidade de vetorização da linguagem e evite o quanto der as estruturas de repetições. Isso fará com que os seus códigos sejam mais eficientes. Aqui apenas queremos exercitar o uso de estruturas de repetições.
+    1. Média aritmética (média amostral): $\overline{x} = n^{-1}\sum_{i = 1}^n x_i.$
+    
+    2. Média geométrica: $G = (\prod_{i=1}^n x_i)^{\frac{1}{n}}.$
+    
+    3. Média harmônica: $H = \frac{n}{\frac{1}{x_1} + \cdots + \frac{1}{x_n}}.$
 
-32. Se `x`, na função `myvar()`, for um vetor não numérico? E se `x` for um vetor com observações **Not Available** `NA`?  Proponha melhorias da função `myvar()` que possa tratar melhor essas situações.
+    Algumas exigências a respeito do funcionamento da função `central()` encontram-se enumeradas abaixo:
+    
+    1 - A função deverá retornar todas as três medidas de tendência central ou apenas uma das estatísticas, a depender do interesse do usuário.
+    
+    2 - Observações **Not Available** `NA` serão eleminadas do cálculo. Porém, uma mensagem de aviso ao usuário deverá ser passada informando o número de observações eliminadas e em quais posições encontravam-se.
+    
+    3 - A função deverá alertar o usuário se uma estrutura ou tipo de dados não coerente com o interesse da função for passado como argumento à `x`.
 
-33. Implemente a função `disp(x)` que retorna uma das medidas de dispersão listadas abaixo:
+     **Nota**: Não utilize a vetorização da linguagem. Nesse exercício desejamos treinar o uso das estruturas de repetições da linguagem. Não utilizar vetorização da linguagem quer dizer que você não poderá aplicar uma função à todos elementos de um vetor. Por exemplo, se `x`é um vetor, você não poderá fazer `x^2`, `sqrt(x)` ou `mean(x)`. Aplique a função a cada posição do vetor utilizando estruturas de repetições. Em seus projetos reais, utilize a capacidade de vetorização da linguagem e evite o quanto der as estruturas de repetições. Isso fará com que os seus códigos sejam mais eficientes. Aqui apenas queremos exercitar o uso das estruturas de repetições. Você também não poderá fazer uso da função `length()`.
+    
+32. Sem utilizar a capacidade de vetorização da linguagem R, implemente a função `myvar(x)` que retorna a variância amostral de um vetor passado como argumetno à `x`. 
+
+    Algumas exigências a respeito do funcionamento da função `myvar()` encontram-se enumeradas abaixo:
+    
+    1 - A função deverá retornar todas as três medidas de dispersão ou apenas uma das estatísticas, a depender do interesse do usuário.
+    
+    2 -  Observações **Not Available** `NA` serão eleminadas do cálculo. Porém, uma mensagem de aviso ao usuário deverá ser passada informando o número de observações eliminadas e em quais posições encontravam-se. 
+    
+    3 - A função deverá alertar o usuário se uma estrutura ou tipo de dados não coerente com o interesse da função for passado como argumento à `x`.
+
+     **Nota**: Não utilize a vetorização da linguagem. Nesse exercício desejamos treinar o uso das estruturas de repetições da linguagem. Não utilizar vetorização da linguagem quer dizer que você não poderá aplicar uma função à todos elementos de um vetor. Por exemplo, se `x`é um vetor, você não poderá fazer `x^2`, `sqrt(x)` ou `mean(x)`. Aplique a função a cada posição do vetor utilizando estruturas de repetições. Em seus projetos reais, utilize a capacidade de vetorização da linguagem e evite o quanto der as estruturas de repetições. Isso fará com que os seus códigos sejam mais eficientes. Aqui apenas queremos exercitar o uso das estruturas de repetições. Você também não poderá fazer uso da função `length()`.
+
+33. Se `x`, na função `myvar()`, for um vetor não numérico? E se `x` for um vetor com observações **Not Available** `NA`?  Proponha melhorias da função `myvar()` que possa tratar melhor essas situações.
+
+34. Implemente a função `disp(x)` que retorna uma das medidas de dispersão listadas abaixo:
 
     - Amplitude: $A = x_{\mathrm{max}} - x_{\mathrm{min}}.$
     - Variância amostral: $S^2 = \frac{\sum_{i=1}^{n}(x_i - \overline{x})^2}{n-1}.$
@@ -287,9 +314,19 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar temp
      
      3 - A função deverá alertar o usuário se uma estrutura ou tipo de dados não coerente com o interesse da função for passado como argumento à `x`.
      
-     **Nota**: Não utilize a vetorização da linguagem. Nesse momento também desejamos treinar o uso das estruturas de repetições da linguagem.
+     **Nota**: Não utilize a vetorização da linguagem. Nesse momento também desejamos treinar o uso das estruturas de repetições da linguagem. Você também não poderá fazer uso da função `length()`.
 
-31. Construa duas funções que escrevam as imagens abaixo, respectivamente. O programa deverá utilizar instruções de laço de resolver o problema.
+35. Implemente a função `mycor(x, y, pearson = TRUE, rm.na = TRUE)` que deverá resver como argumentos dois vetores passados para `x` e `y`, respectivamente. A função `mycor()` deverá retornar o coeficiente de [correlação de Pearson](https://pt.wikipedia.org/wiki/Coeficiente_de_correla%C3%A7%C3%A3o_de_Pearson) se `pearson = TRUE`, caso contrário, retornará o coeficiente de [correlação de Spearman](https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient). Além disso, se `rm.na = TRUE`, a função `mycor()` deverá eliminar os **Not Availables** `NA` dos respectivos vetores. Por exemplo, se `x <- c(1, 8, -1, NA, NA)` e `y <- c(NA, 7, -2, 10, 5)` forem passados para `mycor()`, esta deverá eliminará as duas últimas observações de `x` e `y`, bem como a primeira observação de `x` e `y`, resultando, nesse exemplo, em `x <- c(8, -1)` e `y <- c(7, -2)`. A função deverá avisar a respeito das eliminações e informar quais as posições eliminadas dos vetores.
+    
+    Algumas outras exigências a respeito do funcionamento da função `mycor()` encontram-se enumeradas abaixo:
+    
+      1 - A função deverá parar e alertar o usuário nas situações em que os vetores não tenham os mesmos comprimentos.
+      
+      2 - A função deverá retornar dois objetos, `rho` e `level`, em que `rho` ($\rho$) é o valor da correção e `level` informa o nível dessa correlação. Os níveis possível a ser considerados são: **desprezível** se $\rho \in [0, 0.3)$, **fraca** se $\rho \in [0.3, 0.5)$, **moderada** se $\rho \in [0.5, 0.7)$, **forte** se $\rho \in [0.7, 0.9)$ e **fortíssima** se $\rho \in [0.9, 1]$. 
+
+    **Dica**: A função `warning()` pode ser útil para emitir uma mensagem de aviso ao usuário da função `mycor()`.
+
+36. Construa duas funções que escrevam as imagens abaixo, respectivamente. O programa deverá utilizar instruções de laço de resolver o problema.
 
     **A primeira função deverá imprimir**:
 
