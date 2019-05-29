@@ -168,11 +168,25 @@ A google disponibilizou um [guia de estilo](https://google.github.io/styleguide/
   
 25. Escreva uma função que retorne o imposto pago por mulheres e por homens, sabendo que as mulheres pagam $10%$ e que os homens pagam $5%$ a mais do que as mulheres.
 
+26. Implemente a função `tab(num, inicio, fim)` que esveva em tela a tabuada de um número que escreve no prompt de commando da linguagem R a tabuada do múmero passado como argumento à `num`. **Nota**: Os argumentos `inicio` e `fim` referem-se o início e fim da tabuada, ou seja, `tab(num = 1, inicio = 7, fim = 12)` deverá escrever no prompt:
+
+    ```
+    1 x 7 = 7
+    1 x 8 = 8
+    1 x 9 = 9
+    1 x 10 = 10
+    1 x 11 = 11
+    1 x 12 = 12
+    
+    ```
+    Implemente `tab()` utilizando as diferentes escruturas de repetição da linguagem R (`for`, `while` e `repeat`).
+    
+    
 26. Resolva o exercício anterior utilizando a função `switch()`.
 
 27. Escreva a função `celtofar()` que converte um vetor de temperaturas em graus Celsius para graus Fahrenheit. Considere:
 
-$$F = 1.8 * C + 32,$$
+$$F = 1.8 \times C + 32,$$
     em que $C$ é a temperatura em graus Celsius e $F$ é a temperatura em graus Fahrenheit. 
 
 28. Melhore a função `celtofar()` para que critique valores não válidos de temperatura.
@@ -231,6 +245,23 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar temp
 31. Sem utilizar a capacidade de vetorização da linguagem R, implemente a função `myvar(x)` que retorna a variância amostral de um vetor passado como argumetno à `x`. **Dica**: Não utilizar vetorização da linguagem quer dizer que você não poderá aplicar uma função à todos elementos de um vetor. Por exemplo, se `x`é um vetor, você não poderá fazer `x^2`, `sqrt(x)` ou `mean(x)`. Aplique a função a cada posição do vetor utilizando estruturas de repetições. **Nota**: Em seus projetos reais, utilize a capacidade de vetorização da linguagem e evite o quanto der as estruturas de repetições. Isso fará com que os seus códigos sejam mais eficientes. Aqui apenas queremos exercitar o uso de estruturas de repetições.
 
 32. Se `x`, na função `myvar()`, for um vetor não numérico? E se `x` for um vetor com observações **Not Available** `NA`?  Proponha melhorias da função `myvar()` que possa tratar melhor essas situações.
+
+33. Implemente a função `disp(x)` que retorna uma das medidas de dispersão listadas abaixo:
+
+    - Amplitude: $A = x_{\mathrm{max}} - x_{\mathrm{min}}.$
+    - Variância amostral: $S^2 = \frac{\sum_{i=1}^{n}(x_i - \overline{x})^2}{n-1}.$
+    - Desvio padrão amostral: $S = \sqrt{S^2}.$
+    - Coeficiente de variação: $CV = \frac{100 \times S}{\overline{x}}.$
+    
+    Algumas exigências a respeito do funcionamento da função `disp()` encontram-se enumeradas abaixo:
+    
+     1 - A função deverá retornar todas as quatro estatísticas ou apenas uma das estatísticas, a depender do interesse do usuário.
+     
+     2 - Observações **Not Available** `NA` serão eleminadas do cálculo. Porém, uma mensagem de aviso ao usuário deverá ser passada informando o número de observações eliminadas e em quais posições encontravam-se. 
+     
+     3 - A função deverá alertar o usuário se uma estrutura ou tipo de dados não coerente com o interesse da função for passado como argumento à `x`.
+     
+     **Nota**: Não utilize a vetorização da linguagem. Nesse momento também desejamos treinar o uso das estruturas de repetições da linguagem.
 
 31. Construa duas funções que escrevam as imagens abaixo, respectivamente. O programa deverá utilizar instruções de laço de resolver o problema.
 

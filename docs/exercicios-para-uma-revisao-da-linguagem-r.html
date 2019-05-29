@@ -256,10 +256,19 @@ df<span class="op">$</span>y</code></pre>
 <li><p>Adicione ao data frame dados duas linhas com a média de todas as variáveis e variâncias, respectivamente.</p></li>
 </ol></li>
 <li><p>Escreva uma função que retorne o imposto pago por mulheres e por homens, sabendo que as mulheres pagam <span class="math inline">\(10%\)</span> e que os homens pagam <span class="math inline">\(5%\)</span> a mais do que as mulheres.</p></li>
+<li><p>Implemente a função <code>tab(num, inicio, fim)</code> que esveva em tela a tabuada de um número que escreve no prompt de commando da linguagem R a tabuada do múmero passado como argumento à <code>num</code>. <strong>Nota</strong>: Os argumentos <code>inicio</code> e <code>fim</code> referem-se o início e fim da tabuada, ou seja, <code>tab(num = 1, inicio = 7, fim = 12)</code> deverá escrever no prompt:</p>
+<pre><code>1 x 7 = 7
+1 x 8 = 8
+1 x 9 = 9
+1 x 10 = 10
+1 x 11 = 11
+1 x 12 = 12
+</code></pre>
+<p>Implemente <code>tab()</code> utilizando as diferentes escruturas de repetição da linguagem R (<code>for</code>, <code>while</code> e <code>repeat</code>).</p></li>
 <li><p>Resolva o exercício anterior utilizando a função <code>switch()</code>.</p></li>
 <li><p>Escreva a função <code>celtofar()</code> que converte um vetor de temperaturas em graus Celsius para graus Fahrenheit. Considere:</p></li>
 </ol>
-<p><span class="math display">\[F = 1.8 * C + 32,\]</span>
+<p><span class="math display">\[F = 1.8 \times C + 32,\]</span>
 em que <span class="math inline">\(C\)</span> é a temperatura em graus Celsius e <span class="math inline">\(F\)</span> é a temperatura em graus Fahrenheit.</p>
 <ol start="28" style="list-style-type: decimal">
 <li><p>Melhore a função <code>celtofar()</code> para que critique valores não válidos de temperatura.</p></li>
@@ -326,6 +335,18 @@ i7 =<span class="st"> </span><span class="dv">7</span></code></pre>
 <li><p>Avalie o custo computacional dos exercícios anteriores (exercícios 28 e 29) utilizando a função <code>Sys.time()</code>. Discuta o resultado.</p></li>
 <li><p>Sem utilizar a capacidade de vetorização da linguagem R, implemente a função <code>myvar(x)</code> que retorna a variância amostral de um vetor passado como argumetno à <code>x</code>. <strong>Dica</strong>: Não utilizar vetorização da linguagem quer dizer que você não poderá aplicar uma função à todos elementos de um vetor. Por exemplo, se <code>x</code>é um vetor, você não poderá fazer <code>x^2</code>, <code>sqrt(x)</code> ou <code>mean(x)</code>. Aplique a função a cada posição do vetor utilizando estruturas de repetições. <strong>Nota</strong>: Em seus projetos reais, utilize a capacidade de vetorização da linguagem e evite o quanto der as estruturas de repetições. Isso fará com que os seus códigos sejam mais eficientes. Aqui apenas queremos exercitar o uso de estruturas de repetições.</p></li>
 <li><p>Se <code>x</code>, na função <code>myvar()</code>, for um vetor não numérico? E se <code>x</code> for um vetor com observações <strong>Not Available</strong> <code>NA</code>? Proponha melhorias da função <code>myvar()</code> que possa tratar melhor essas situações.</p></li>
+<li><p>Implemente a função <code>disp(x)</code> que retorna uma das medidas de dispersão listadas abaixo:</p>
+<ul>
+<li>Amplitude: <span class="math inline">\(A = x_{\mathrm{max}} - x_{\mathrm{min}}.\)</span></li>
+<li>Variância amostral: <span class="math inline">\(S^2 = \frac{\sum_{i=1}^{n}(x_i - \overline{x})^2}{n-1}.\)</span></li>
+<li>Desvio padrão amostral: <span class="math inline">\(S = \sqrt{S^2}.\)</span></li>
+<li>Coeficiente de variação: <span class="math inline">\(CV = \frac{100 \times S}{\overline{x}}.\)</span></li>
+</ul>
+<p>Algumas exigências a respeito do funcionamento da função <code>disp()</code> encontram-se enumeradas abaixo:</p>
+<p>1 - A função deverá retornar todas as quatro estatísticas ou apenas uma das estatísticas, a depender do interesse do usuário.</p>
+<p>2 - Observações <strong>Not Available</strong> <code>NA</code> serão eleminadas do cálculo. Porém, uma mensagem de aviso ao usuário deverá ser passada informando o número de observações eliminadas e em quais posições encontravam-se.</p>
+<p>3 - A função deverá alertar o usuário se uma estrutura ou tipo de dados não coerente com o interesse da função for passado como argumento à <code>x</code>.</p>
+<p><strong>Nota</strong>: Não utilize a vetorização da linguagem. Nesse momento também desejamos treinar o uso das estruturas de repetições da linguagem.</p></li>
 <li><p>Construa duas funções que escrevam as imagens abaixo, respectivamente. O programa deverá utilizar instruções de laço de resolver o problema.</p>
 <p><strong>A primeira função deverá imprimir</strong>:</p>
 <pre><code>**********
