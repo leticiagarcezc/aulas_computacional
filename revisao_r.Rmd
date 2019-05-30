@@ -32,7 +32,7 @@ A google disponibilizou um [guia de estilo](https://google.github.io/styleguide/
     1. Descreva os principais tipos de dados da linguagem R.
     2. Descreva as principais estruturas de dados da linguagem R.
     3. Disserte sobre as diferenças entre tipos de dados e estruturas de dados.
-    4. Descreva quais estruturas de dados são homogêneas e quais estruturas são heterogêneas.
+    4. Descreva quais estruturas de dados são homogêneas e quais estruturas são heterogêneas.</br></br>
 
 
 3. Explique o por quê das saídas abaixo:
@@ -440,4 +440,4 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: para economizar temp
 
 58. Implemente a função `strposition(x)`, em que dado uma palavra (string) fromada por letras do alfabeto Romano e passada como argumento para `x`, retorna a posição das letras em um vetor. Por exemplo, a string (palavra) **cada** passada para a função fará com que `strposition()` retorne o vetor formados pelos elementos 3, 1, 4 e 1. **Dica**: a função **não** poderá aceitar strings que são formadas por pelo menos um caracter que não seja uma letra do alfabeto Romano.
 
-59. Altere a função `strposition(x)` para que em situação da string possuir um ou mais caracteres não pertencentes ao alfabeto Romano, o retono seja `NA`, nas respectivas posições destes caracteres.
+59. Altere a função `strposition(x)` para que em situação da string (palavra) possuir um ou mais caracteres não pertencentes ao alfabeto Romano, o retono seja `NA`, nas respectivas posições destes caracteres.
