@@ -281,7 +281,7 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: para economizar temp
 
 39. Se `x`, na função `myvar()`, for um vetor não numérico? E se `x` for um vetor de caracteres numéricos? E se `x` for uma string numérica como `"1,2,3"` que desejamos tratar como sendo o `c(1, 2, 3)`? Modifique a função `myvar()` para que venham tratar/considerar essas situações. 
 
-40. Implemente a função `disp(x)` que retorna uma das medidas de dispersão listadas abaixo:
+40. Implemente a função `disp(x)` que deverá retornar uma das medidas de dispersão listadas logo abaixo:
 
     - Amplitude: $A = x_{\mathrm{max}} - x_{\mathrm{min}}.$
     - Variância amostral: $S^2 = \frac{\sum_{i=1}^{n}(x_i - \overline{x})^2}{n-1}.$
@@ -292,23 +292,23 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: para economizar temp
     
      1 - A função deverá retornar todas as quatro estatísticas ou apenas uma das estatísticas, a depender do interesse do usuário.
      
-     2 - Observações **Not Available** `NA` serão eleminadas do cálculo. Porém, uma mensagem de aviso ao usuário deverá ser passada informando o número de observações eliminadas e em quais posições encontravam-se. 
+     2 - Observações **Not Availables** `NA` serão eleminadas do cálculo. Porém, uma mensagem de aviso ao usuário deverá ser passada informando o número de observações eliminadas e em quais posições encontravam-se. 
      
      3 - A função deverá alertar o usuário se uma estrutura ou tipo de dados não coerente com o interesse da função for passado como argumento à `x`.
      
-     **Nota**: Não utilize a vetorização da linguagem. Nesse momento também desejamos treinar o uso das estruturas de repetições da linguagem. Você também não poderá fazer uso da função `length()`.
+     **Nota**: Não utilize a vetorização da linguagem. Nesse momento também desejamos treinar o uso das estruturas de repetições da linguagem.
 
-41. Implemente a função `mycor(x, y, pearson = TRUE, rm.na = TRUE)` que deverá resver como argumentos dois vetores passados para `x` e `y`, respectivamente. A função `mycor()` deverá retornar o coeficiente de [correlação de Pearson](https://pt.wikipedia.org/wiki/Coeficiente_de_correla%C3%A7%C3%A3o_de_Pearson) se `pearson = TRUE`, caso contrário, retornará o coeficiente de [correlação de Spearman](https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient). Além disso, se `rm.na = TRUE`, a função `mycor()` deverá eliminar os **Not Availables** `NA` dos respectivos vetores. Por exemplo, se `x <- c(1, 8, -1, NA, NA)` e `y <- c(NA, 7, -2, 10, 5)` forem passados para `mycor()`, esta deverá eliminará as duas últimas observações de `x` e `y`, bem como a primeira observação de `x` e `y`, resultando, nesse exemplo, em `x <- c(8, -1)` e `y <- c(7, -2)`. A função deverá avisar a respeito das eliminações e informar quais as posições eliminadas dos vetores.
+41. Implemente a função `mycor(x, y, pearson = TRUE, rm.na = TRUE)` que deverá receber como argumentos dois vetores passados para `x` e `y`, respectivamente. A função `mycor()` deverá retornar o coeficiente de [correlação de Pearson](https://pt.wikipedia.org/wiki/Coeficiente_de_correla%C3%A7%C3%A3o_de_Pearson) se `pearson = TRUE`, caso contrário, retornará o coeficiente de [correlação de Spearman](https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient). Além disso, se `rm.na = TRUE`, a função `mycor()` deverá eliminar os **Not Availables** `NA` dos respectivos vetores. Por exemplo, se `x <- c(1, 8, -1, NA, NA)` e `y <- c(NA, 7, -2, 10, 5)` forem passados para `mycor()`, esta deverá eliminará as duas últimas observações de `x` e `y`, bem como a primeira observação de `x` e `y`, resultando, nesse exemplo, em `x <- c(8, -1)` e `y <- c(7, -2)`, respectivamente. A função deverá alertar a respeito das eliminações e informar quais as posições eliminadas dos vetores.
     
     Algumas outras exigências a respeito do funcionamento da função `mycor()` encontram-se enumeradas abaixo:
     
       1 - A função deverá parar e alertar o usuário nas situações em que os vetores não tenham os mesmos comprimentos.
       
-      2 - A função deverá retornar dois objetos, `rho` e `level`, em que `rho` ($\rho$) é o valor da correção e `level` informa o nível dessa correlação. Os níveis possível a ser considerados são: **desprezível** se $\rho \in [0, 0.3)$, **fraca** se $\rho \in [0.3, 0.5)$, **moderada** se $\rho \in [0.5, 0.7)$, **forte** se $\rho \in [0.7, 0.9)$ e **fortíssima** se $\rho \in [0.9, 1]$. 
+      2 - A função deverá retornar dois objetos, `rho` e `level`, em que `rho` ($\rho$) é o valor da correlação e `level` informa o nível dessa correlação. Os níveis possível a ser retornados são: **desprezível** se $\rho \in [0, 0.3)$, **fraca** se $\rho \in [0.3, 0.5)$, **moderada** se $\rho \in [0.5, 0.7)$, **forte** se $\rho \in [0.7, 0.9)$ e **fortíssima** se $\rho \in [0.9, 1]$. 
 
-    **Dica**: A função `warning()` pode ser útil para emitir uma mensagem de aviso ao usuário da função `mycor()`.
+    **Dica**: A função `warning()` pode ser útil para emitir uma mensagem de aviso (alerta) ao usuário da função `mycor()`.
 
-42. Construa duas funções que escrevam as imagens abaixo, respectivamente. O programa deverá utilizar instruções de laço de resolver o problema.
+42. Construa duas funções, `tree1()` e `tree2()`, que escrevam, no prompt de comando, as imagens abaixo, respectivamente. O programa deverá utilizar instruções de repetições para resolver o problema.
 
     **A primeira função deverá imprimir**:
 
@@ -339,8 +339,9 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: para economizar temp
     *-
     *
     ```
-
-43. Escreva um programa em R, utilizando as instruções de loop vistas anteriormente, de modo a fornecer as seguintes estruturas, adepender do valor de `n`.
+    Implemente as funções utilizando as estruturas de repetições `for`, `while` e `repeat`.
+    
+43. Escreva a função `tree3()`, utilizando instruções de repetições, de modo a fornecer as seguintes estruturas, adepender do valor de `n`.
 
 
     Para $n = 1$:
@@ -363,11 +364,11 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: para economizar temp
         **
         ***
         
-    e assim por diante para outros valores de $n$. **Dica**: crie uma função `tree()` que tenha `n` como argumento.
+    e assim por diante para outros valores de $n$. Implemente `tree3()` utilizando as estruturas de repetições `for`, `while` e `repeat`.
 
-44. Resolva o exercício anterior acrescentando mais um argumento à função `tree()` para que seja possível especificar outro caracter além de `*`. 
+44. Melhore as funções `tree1()`, `tree2()` e `tree3()` de modo que estas possam considerar caracteres distintos e não somento o caracter asterisco.
 
-45. Modifique o programa da solução do exercício 31, de tal forma que a estrutura obtida seja:
+45. Modifique a função `tree1()`, de tal forma que a estrutura obtida seja:
 
     Para $n = 1$:
 
@@ -389,25 +390,24 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: para economizar temp
     BB
     CCC
     ```
-    e assim por diante para outros valores de $n$. **Dica**: Note que $n \leq 26$. Assim, retorne uma mensagem de advertência se um valor de $n$ inapropriado for informado. Por exemplo, utilize a função `stop()`.
+    e assim por diante para outros valores de $n$. **Dica**: Note que $n \leq 26$. Assim, retorne uma mensagem de advertência se um valor de $n$ inapropriado for informado. **Dica**: utilize a função `stop()`.
 
-46. Implemente a função `aprox_e()` que retorna uma aproximação para $\mathrm{e}^x$ considerando:
+46. Implemente a função `aprox_e()` que retorna uma aproximação para $\mathrm{e}^x$, em que:
 
     $$\mathrm{e}^x = \sum_{n = 0}^{\infty} \frac{x^n}{n!}.$$
-    **Dica**: A função `aprox_e()` deverá receber um argumento em que será utilizado como o número de termos somados.
+    **Dica**: A função `aprox_e()` deverá receber como argumento o número de somas a serem consideradas.
 
-
-47. Crie a função `aprox_pi()`, fazendo uso de instruções de repetição, que implemente a aproximação abaixo para o valor da constante $\pi$:
+47. Crie a função `aprox_pi()`, fazendo uso de instruções de repetição, que forneça uma aproximação para o valor da constante $\pi$. Essa aproximação deverá considerar:
 
     $$\pi = 4 - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \frac{4}{9} - \frac{4}{11} + \dots$$
 
-    **Dica**: Premita que o usuário de sua função forneça a quantidade de termos a ser considerado na soma. Além disso, faça       com que sua função critique valores indevidos para a quantidade de termos somados. 
+    **Dica**: Premita que o usuário de sua função forneça a quantidade de termos a serem somados. Além disso, faça com que sua função critique valores indevidos para a quantidade de termos somados. 
 
 48. Implemente a função `fib()`, utilizando instruções de repetição, que retorna o Fibonacci de um número. Lembre-se, a sequência de Fibonacci é dada por $1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, \ldots$ . Note que Fibonacci de $n$ é dado por $F_n = F_{n-1} + F_{n-2},\, n > 2$, com $F_1 = 1$ e $F_2 = 1$. Por exemplo, Fibonacci de 5 é dado por $F_5 = F_{4} + F_{3} = 3 + 2 = 5$.
 
-49. Implemente o exercício anterior usando funções recursivas. **Lembre-se**: chamamos de funções recursivas a função que chama a si mesma.
+49. Implemente o exercício anterior usando funções recursivas. **Lembre-se**: chamamos de funções recursivas as funçãos que chamam a si mesma.
 
-    **Um esboço**:
+    **Um esboço de função recursiva**:
 
     ```r
     func_f <- function(...){
@@ -416,7 +416,7 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: para economizar temp
        # Sim! Estamos chamando a função que estamos criando. ;)
        func_f(...)
         
-       # É preciso para em algum momento
+       # Será preciso parar em algum momento
        # somos finitos :)
        if (contition) break 
     }
@@ -424,22 +424,20 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: para economizar temp
 
 50. Implemente a função `aprox_pi()` de forma recursiva.
 
+51. Implemente a função `nachange(df)`, em que `df` recebe um data frame/matriz. A função `nachange()` deverá trocar `NA` pelo character "?". **Dica**: Em caso de `df` não possuir nenhum elemento `NA`, a função `nachange()` deverá retornar o objeto passado à `df`. 
 
-51. Implementa a função `nachange(df)`, em que `df` recebe um data frame / matriz. A função `nachange()` deverá trocar `NA` pelo character "?". **Dica**: Em caso de `df` não possuir nenhum elemento `NA`, a função `nachange()` deverá retornar o objeto passado para `df`. 
+52. Construa a função `searchindf(df, value)`, em que `df` é um data frame/matriz e `value` é um vetor de uma única posição. A função `searchindf()`deverá retorna **TRUE** se o valor passado para `value` é encontrado em alguma posição do data frame/matriz passado(a) para `df` e **FALSE** caso contrário. **Dica**: tente construir a função da forma mais robusta possível. Por exemplo, considere criticar os argumentos, caso estes não tenham a estrutura de dados adequada ao objetivo da função.
 
-52. Construa a função `searchindf(df, value)`, em que `df` é um data frame / matriz e `value` é um vetor de uma única posição. A função `searchindf()`deverá retorna **TRUE** se o valor passado para `value` é encontrado em alguma posição do data frame passado para `df` e **FALSE** caso contrário. **Dica**: Tente construir a função de forma mais robusta possível. Por exemplo, considere criticar os argumentos caso estes não sejam de estrutura de dados correta. **Você não poderá utilizar funções já implementadas em R para esse finalidade**.
-
-53. Construa a função `namecolsort(df)`, em que `df` recebe como argumento um data frame/matriz. A função `namecolsort()` deverá retorna o data frame / matriz com as colunas ordenadas. **Dica**: Ordene as colunas considerando o primeiro caracter do nome da coluna.
+53. Construa a função `namecolsort(df)`, em que `df` receberá como argumento um(a) data frame/matriz. A função `namecolsort()` deverá retorna o(a) data frame/matriz com as colunas ordenadas. **Dica**: ordene as colunas considerando o primeiro caracter que compõe o nome da coluna (variável).
     
+54. Escreva a função `exclusive(df)`, em que `df` receberá como argumento um(a) data frame/matriz. A função `exclusive()` deverá retornar a posição das linhas exclusivas, ou seja, as linhas que não possuem elementos repetidos.
 
-54. Escreva a função `exclusive(df)`, em que `df`recebe como argumento um data frame/matriz. A função `exclusive()` deverá retornar a posição das linhas exclusivas, ou seja, as linhas que não possuem elementos repetidos.
+55. Escreva uma função `extremeindex(df, max = NULL)`, em que `df` receberá como primeiro argumento um(a) data frame/matriz. A função `maxindex()` deverá retornar a posição (linha, coluna) do valor máximo contido no objeto passado para `df`, caso `max = TRUE`. Em caso de `max = FALSE`,  a função `maxindex()` deverá retornar a posição (linha, coluna) do valor mínimo contido no objeto passado à `df`. Para o caso de `max = NULL` (caso padrão), a função `maxindex()` deverá retornar uma matriz de ordem 2x2, em que cada linha deverá retornar a posição do elemento mínimo e máximo, respectivamente, contidos no objeto passado à `df`.
 
-55. Escreva uma função `extremeindex(df, max = TRUE)`, em que `df`recebe como primeiro argumento um data frame/matriz. A função `maxindex()` deverá retornar a posição (linha, coluna) do valor máximo no objeto passado para `df`, caso `max = TRUE`. Em caso de `max = FALSE`,  a função `maxindex()` deverá retornar a posição (linha, coluna) do valor mínimo no objeto passado para `df`. **Dica**: A função `maxindex()` deverá retornar um vetor em que o primeiro elemento refere-se à linha e o segundo informa a coluna do elemento encontrado (máximo/mínimo).
+56. Implemente a função `myt(df)`, em que `df`recebe como argumento um(a) data frame/matriz. A função `myt()` deverá "girar", em 90 graus, a(o) matriz/data frame passado à `df`. **Dica**: não utilize a função `t()` para transpor a matriz.
 
-56. Implemente a função `myt(df)`, em que `df`recebe como argumento um data frame/matriz. A função `myt()` deverá girar em 90 graus a matriz/data frame passado para `df`. **Dica**: Não utilize a função `t()` para transpor uma matriz.
+57. Crie a função `anagram(x, y)` que recebe dois argumentos (duas strings). A função `anagram()` deverá retornar **TRUE** se uma palavra (string) é anagrama da outra e **FALSE** em situação contrária. A função deverá considerar que ambas as strings possuem a mesma quantidade de caracteres. Caso a quantidade de caracteres não seja igual, em ambas as strings, a função deverá parar e advertir o usuário. **Dica**: você poderá utilizar a função `strsplit()`. 
 
-57. Crie a função `anagram(x, y)` que recebe dois argumentos (duas strings). A função `anagram()` deverá retornar **TRUE** se uma palavra (string) é anagrama da outra e **FALSE** em situação contrária. A função deverá considerar que ambas as strings possui a mesma quantidade de caracteres. Caso a quantidade de caracteres não seja igual em ambas as strings, a função deverá parar e advertir o usuário. **Dica**: Você poderá utilizar a função `strsplit()`. 
+58. Implemente a função `strposition(x)`, em que dado uma palavra (string) fromada por letras do alfabeto Romano e passada como argumento para `x`, retorna a posição das letras em um vetor. Por exemplo, a string (palavra) **cada** passada para a função fará com que `strposition()` retorne o vetor formados pelos elementos 3, 1, 4 e 1. **Dica**: a função **não** poderá aceitar strings que são formadas por pelo menos um caracter que não seja uma letra do alfabeto Romano.
 
-58. Implemente a função `strposition(x)` que dado uma palavra (string) fromada por letras do alfabeto Romano e passada como argumento para `x`, retorne a posição das letras em um vetor. Por exemplo, a string (palavra) **cada** passada para a função fará com que `strposition()` retorne o vetor formados pelos elementos 3, 1, 4 e 1. **Dica**: A função **não** poderá aceitar strings que são formadas por pelo menos um caracter que não seja uma letra do alfabeto Romano.
-
-59. Altere a função `strposition(x)` para que em situação da string possuir um ou mais caracteres não pertencentes ao alfabeto Romano, o retono seja`NA`, nas respectivas posições destes caracteres.
+59. Altere a função `strposition(x)` para que em situação da string possuir um ou mais caracteres não pertencentes ao alfabeto Romano, o retono seja `NA`, nas respectivas posições destes caracteres.
