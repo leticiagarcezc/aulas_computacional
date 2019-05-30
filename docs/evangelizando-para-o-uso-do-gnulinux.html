@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>2 Evangelizando para o uso do GNU/Linux | ESTATÍSTICA COMPUTACIONAL</title>
+  <meta name="description" content="Disciplina de Estatística Computacional - Departamento de Estatística">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="2 Evangelizando para o uso do GNU/Linux | ESTATÍSTICA COMPUTACIONAL" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://prdm0.github.io/aulas_computacional/" />
+  
+  <meta property="og:description" content="Disciplina de Estatística Computacional - Departamento de Estatística" />
+  <meta name="github-repo" content="prdm0/aulas_computacional" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Evangelizando para o uso do GNU/Linux | ESTATÍSTICA COMPUTACIONAL" />
+  
+  <meta name="twitter:description" content="Disciplina de Estatística Computacional - Departamento de Estatística" />
+  
+
+<meta name="author" content="Docente: Prof. Dr. Pedro Rafael Diniz Marinho   E-mail: pedro.rafael.marinho@gmail.com / pedro@de.ufpb.br   Perído Letivo: 2019.1">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="revisao-basica-da-linguagem-r.html">
+<link rel="next" href="ides-de-programacao-em-r.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html"><i class="fa fa-check"></i>Prefácio</a><ul>
+<li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html#tecnologias-abordadas-no-curso"><i class="fa fa-check"></i>Tecnologias abordadas no curso</a></li>
+<li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html#teorias-abordadas-no-curso"><i class="fa fa-check"></i>Teorias abordadas no curso</a></li>
+<li class="chapter" data-level="" data-path="prefacio.html"><a href="prefacio.html#sugestoes-de-passos-para-revisao-da-linguagem-r"><i class="fa fa-check"></i>Sugestões de passos para revisão da linguagem R</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="revisao-basica-da-linguagem-r.html"><a href="revisao-basica-da-linguagem-r.html"><i class="fa fa-check"></i><b>1</b> Revisão básica da linguagem R</a><ul>
+<li class="chapter" data-level="" data-path="revisao-basica-da-linguagem-r.html"><a href="revisao-basica-da-linguagem-r.html#exercicios-propostos"><i class="fa fa-check"></i>Exercícios propostos</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="evangelizando-para-o-uso-do-gnulinux.html"><a href="evangelizando-para-o-uso-do-gnulinux.html"><i class="fa fa-check"></i><b>2</b> Evangelizando para o uso do GNU/Linux</a><ul>
+<li class="chapter" data-level="2.1" data-path="evangelizando-para-o-uso-do-gnulinux.html"><a href="evangelizando-para-o-uso-do-gnulinux.html#um-breve-historico"><i class="fa fa-check"></i><b>2.1</b> Um breve histórico</a></li>
+<li class="chapter" data-level="2.2" data-path="evangelizando-para-o-uso-do-gnulinux.html"><a href="evangelizando-para-o-uso-do-gnulinux.html#vantagens-em-utilizar-gnulinux"><i class="fa fa-check"></i><b>2.2</b> Vantagens em utilizar GNU/Linux</a></li>
+<li class="chapter" data-level="2.3" data-path="evangelizando-para-o-uso-do-gnulinux.html"><a href="evangelizando-para-o-uso-do-gnulinux.html#algumas-distribuicoes"><i class="fa fa-check"></i><b>2.3</b> Algumas distribuições</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="evangelizando-para-o-uso-do-gnulinux.html"><a href="evangelizando-para-o-uso-do-gnulinux.html#uma-sugestao-pessoal"><i class="fa fa-check"></i><b>2.3.1</b> Uma sugestão pessoal</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="evangelizando-para-o-uso-do-gnulinux.html"><a href="evangelizando-para-o-uso-do-gnulinux.html#equivalencia-de-progamas-entre-diferentes-so"><i class="fa fa-check"></i><b>2.4</b> Equivalência de progamas entre diferentes SO</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ides-de-programacao-em-r.html"><a href="ides-de-programacao-em-r.html"><i class="fa fa-check"></i><b>3</b> IDEs de programação em R</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">ESTATÍSTICA COMPUTACIONAL</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="evangelizando-para-o-uso-do-gnulinux" class="section level1">
+<h1><span class="header-section-number">2</span> Evangelizando para o uso do GNU/Linux</h1>
+<p>Nesse capítulo tentarei o convencer, sem imposições, que o uso de alguma distribuição GNU/Linux poderá ser um caminho coerente e que tratá facilidades para quem deseja um sistema operacional flexível, fácil de manter e livre. Tentarei aqui expressar minhas experiências no uso do linux na estatística e irei sugerir distribuições GNU/Linux que considero interessantes.</p>
+<p><strong>Observação</strong>:</p>
+
+<div class="rmdobservation">
+<div class="text-justify">
+<p>Você é livre para escolher o sistema operacional (SO) ao qual deseja trabalhar. Porém, em situações em que seja necessário dissertar sobre alguma configuração específica do SO (<strong>não serão muitas</strong>), as explicações apresentadas levarão em consideração apenas sistemas GNU/Linux.</p>
+</div>
+</div>
+
+<div id="um-breve-historico" class="section level2">
+<h2><span class="header-section-number">2.1</span> Um breve histórico</h2>
+<p>Em meados de 1970, o Unix foi e nos dias de hoje ainda é um dos sistemas operacionais mais amplamente utilizados em <a href="https://pt.wikipedia.org/wiki/Mainframe"><strong>mainframes</strong></a> devido à sua ampla confiabilidade, distribuição e suporte. Muitos desses sistemas Unix se tratavam de sistemas proprietários. Entre os sistemas Unix mais populares e livres estava o <strong>Berkley Software Distribution</strong> (<strong>BSD</strong>) cujo desenvolvimento (1977 e 1995) era realizado pela <strong>Computer Systems Research Group</strong> (<strong>CSRG</strong>) vinculado à Universidade da Califórnia em Berkely.</p>
+<p><strong>Nota</strong>:</p>
+
+<div class="rmdnote">
+<div class="text-justify">
+<p>Nos dias de hoje, o termo <strong>BSD</strong> é utilizado para designar qualquer sistema operacional do tipo Unix (sistemas <strong>Unix-like</strong>). Muitas vezes o termo <strong>Unix-like</strong> é substituído por <strong>UN*X</strong> ou <strong>*nix</strong>. Tratam-se de sistemas operacionais baseados em Unix mas que não necessariamente estão de acordo com a especificação <a href="http://www.unix.org/what_is_unix/single_unix_specification.html"><strong>Single UNIX</strong></a>.</p>
+</div>
+</div>
+
+<p>O sistema Linux (<strong>kernel</strong>) foi baseado no Unix, sendo este o sistema <strong>Unix-like</strong> mais popular dentre diversos outros que são razoavelmente conhecidos pelo público em geral e bastante conhecidos por profissionais que tem alguma afinidade com a computação.</p>
+<p>O sistema operacional Linux foi inicialmente desenvolvido pelo engenheiro de software <a href="https://github.com/torvalds"><strong>Linus Torvalds</strong></a> em 1991. Nessa época, <a href="https://github.com/torvalds"><strong>Linus Torvalds</strong></a> era discente na Universidade de Helsinque, Finlândia como estudante de ciência da computação. Sua dissertação de mestrado intitulada <a href="https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf"><strong>Linux: a Portable Operating System</strong></a> (56 páginas) foi defendida no Departamento de Ciência da Computação da Universidade de Helsinque, em 31 de janeiro de 1997.</p>
+<p>Atualmente o desenvolvimento do kernel Linux possuem colaborações de diversos programadores ao redor do mundo, em que <a href="https://github.com/torvalds"><strong>Linus Torvalds</strong></a> é o pricipal desenvolvedor e de gerencia o rumo em que o projeto deverá seguir.</p>
+
+<div class="rmdnote">
+<div class="text-justify">
+<p><a href="https://github.com/torvalds"><strong>Aqui</strong></a> você poderá acessar a conta oficial do Linus Torvalds no <a href="https://pt.wikipedia.org/wiki/GitHub"><strong>GitHub</strong></a>. Você poderá acompanhar todas as modificações e quando estas foram incluídas no projeto Linux.</p>
+</div>
+</div>
+
+</div>
+<div id="vantagens-em-utilizar-gnulinux" class="section level2">
+<h2><span class="header-section-number">2.2</span> Vantagens em utilizar GNU/Linux</h2>
+</div>
+<div id="algumas-distribuicoes" class="section level2">
+<h2><span class="header-section-number">2.3</span> Algumas distribuições</h2>
+<div id="uma-sugestao-pessoal" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> Uma sugestão pessoal</h3>
+</div>
+</div>
+<div id="equivalencia-de-progamas-entre-diferentes-so" class="section level2">
+<h2><span class="header-section-number">2.4</span> Equivalência de progamas entre diferentes SO</h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="revisao-basica-da-linguagem-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ides-de-programacao-em-r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/prdm0/aulas_computacional/edit/master/linux.Rmd",
+"text": "Edite"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "none"
+},
+"toolbar": null
+});
+});
+</script>
+
+</body>
+
+</html>
