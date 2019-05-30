@@ -419,6 +419,7 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: para economizar temp
        # Será preciso parar em algum momento
        # somos finitos :)
        if (contition) break 
+       
     }
     ```
 

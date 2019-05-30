@@ -27,7 +27,7 @@ O sistema operacional Linux foi inicialmente desenvolvido pelo engenheiro de sof
 Atualmente o desenvolvimento do kernel Linux possuem colaborações de diversos programadores ao redor do mundo, em que [**Linus Torvalds**](https://github.com/torvalds) é o pricipal desenvolvedor e gerencia o rumo em que o projeto deverá seguir.
 
 \BeginKnitrBlock{rmdnote}<div class="rmdnote"><div class=text-justify>
-[**Aqui**](https://github.com/torvalds) você poderá acessar a conta oficial do Linus Torvalds no [**GitHub**](https://pt.wikipedia.org/wiki/GitHub). Você poderá acompanhar todas as modificações e quando estas foram incluídas no projeto Linux.
+[**Aqui**](https://github.com/torvalds) você poderá acessar a conta oficial do Linus Torvalds no [**GitHub**](https://pt.wikipedia.org/wiki/GitHub). Você poderá acompanhar todas as modificações e quando estas foram incluídas no projeto Linux. Mais adiante nesse material trataremos a respeito do uso do [**git**](https://git-scm.com/)/[**GitHub**](https://pt.wikipedia.org/wiki/GitHub). Por sinal, o [**git**](https://git-scm.com/) foi criado pelo Linus Torvalds.
 </div></div>\EndKnitrBlock{rmdnote}
 
 
