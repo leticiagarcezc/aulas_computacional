@@ -39,9 +39,9 @@ Saindo do território dos sistemas BSD's proprietários, abaixo listo alguns dos
 
 2 - [**NetBSD**](https://www.netbsd.org/): Trata-se de uma derivação do sistema 4.4BSD da Universidade da California, Berkley e do 386BSD, às vezes chamado de Jolix. Assim como o FreeBSD, o NetBSD é um sistema que pode rodar em diversas arquiteturas de computadores. O seu logo é uma [**bandeirola**](https://www.netbsd.org/gallery/logos.html).
 
-3 - [**OpenBSD**](https://www.openbsd.org/): Trata-se de um projeto baseado no sistema 4.4BSD. O projeto OpenBSD desenvolveu aplicações como o [**OpenSSH**](https://www.openssh.com/) que é a principal ferramenta de conectividade para login remoto utilizando o protocolo [**Secure Shell (SSH)**]("https://pt.wikipedia.org/wiki/Secure_Shell").
+3 - [**OpenBSD**](https://www.openbsd.org/): Trata-se de um projeto baseado no sistema 4.4BSD. O projeto OpenBSD desenvolveu aplicações como o [**OpenSSH**](https://www.openssh.com/) que é a principal ferramenta de conectividade para login remoto utilizando o protocolo [**Secure Shell (SSH)**]("https://pt.wikipedia.org/wiki/Secure_Shell"). O seu mascote é o [**Puffy**](https://en.wikipedia.org/wiki/OpenBSD).
 
-4 - [**DragonFly BSD**](https://www.dragonflybsd.org/):
+4 - [**DragonFly BSD**](https://www.dragonflybsd.org/): Os seus desenvolvedores afirmam que trata-se de um sistema operacional pertencente à mesma classe de outros sistemas baseados em BSD e Linux, incluindo recursos que o diferenciam de outros sistemas operacionais da mesma classe. Por exemplo, o [**DragonFly BSD**](https://www.dragonflybsd.org/) é o HAMMER, um moderno sistema de arquivos de alta peformance descata-se como a mais proeminente diferença. O mascote do projeto é uma [**libélula**](https://www.dragonflybsd.org/images/).
 
 **Observação**:
 
