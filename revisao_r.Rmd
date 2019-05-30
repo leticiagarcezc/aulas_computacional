@@ -243,13 +243,13 @@ A google disponibilizou um [guia de estilo](https://google.github.io/styleguide/
     **Dica**: Uma função robusta deverá tratar problema(s) com a(s) entrada(s), isto é, deverá criticar informações inconsistentes passadas como argumento.
 
 34. Utilizando a instrução de repetição `for` construa um pequeno programa que com base em um vetor de valores no intervalo
-$[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar tempo, faça `vetor <- runif(n = 1e5, min = 0, max = 1)` para gerar o objeto `vetor`.
+$[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: para economizar tempo, considere `vetor <- runif(n = 1e5, min = 0, max = 1)`.
 
-35. Resolva o exercício 28 sem utilizar nenhuma instrução de repetição.
+35. Resolva o exercício anterior sem utilizar nenhuma instrução de repetição.
 
-36. Avalie o custo computacional dos exercícios anteriores (exercícios 28 e 29) utilizando a função `Sys.time()`. Discuta o resultado.
+36. Avalie o custo computacional dos exercícios anteriores (exercícios 34 e 35) utilizando a função `Sys.time()`. Discuta o resultado.
 
-37. Construa a função `central(x)` que recebe como argumeto um vetor passado para `x` e retorna algumas medidas de tendência central. A função `central()` deverá retornar:
+37. Construa a função `central(x)` que recebe como argumeto um vetor passado à `x` e retorna algumas medidas de tendência central. A função `central()` deverá retornar:
 
     1. Média aritmética (média amostral): $\overline{x} = n^{-1}\sum_{i = 1}^n x_i.$
     
@@ -261,25 +261,25 @@ $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar temp
     
     1 - A função deverá retornar todas as três medidas de tendência central ou apenas uma das estatísticas, a depender do interesse do usuário.
     
-    2 - Observações **Not Available** `NA` serão eleminadas do cálculo. Porém, uma mensagem de aviso ao usuário deverá ser passada informando o número de observações eliminadas e em quais posições encontravam-se.
+    2 - Observações **Not Availables** `NA` serão eleminadas do cálculo. Porém, uma mensagem de aviso ao usuário da função deverá ser emitida informando-o a repseito do número de observações eliminadas e em quais posições encontravam-se estas observações.
     
-    3 - A função deverá alertar o usuário se uma estrutura ou tipo de dados não coerente com o interesse da função for passado como argumento à `x`.
+    3 - A função deverá alertar o usuário se uma estrutura/tipo de dados não suportado por `central()` for passado como argumento à `x`. A função deverá alertar qual estrutura/tipo de dados foi passado, avinsando assim que essa estrutura/tipo de dados não poderá vir a ser processado(a). 
 
-     **Nota**: Não utilize a vetorização da linguagem. Nesse exercício desejamos treinar o uso das estruturas de repetições da linguagem. Não utilizar vetorização da linguagem quer dizer que você não poderá aplicar uma função à todos elementos de um vetor. Por exemplo, se `x`é um vetor, você não poderá fazer `x^2`, `sqrt(x)` ou `mean(x)`. Aplique a função a cada posição do vetor utilizando estruturas de repetições. Em seus projetos reais, utilize a capacidade de vetorização da linguagem e evite o quanto der as estruturas de repetições. Isso fará com que os seus códigos sejam mais eficientes. Aqui apenas queremos exercitar o uso das estruturas de repetições. Você também não poderá fazer uso da função `length()`.
+     **Nota**: Não utilize a vetorização da linguagem R. Nesse exercício desejamos treinar o uso das estruturas de repetições da linguagem. Não utilizar vetorização da linguagem quer dizer que você não poderá aplicar uma função à todos elementos de um vetor. Por exemplo, se `x` é um vetor, você não poderá fazer `x^2`, `sqrt(x)`, `mean(x)`, `length()`, etc. Aplique a função a cada posição do vetor utilizando estruturas de repetições. Em seus projetos reais, utilize a capacidade de vetorização da linguagem e evite o quanto der as estruturas de repetições. Isso fará com que os seus códigos sejam mais eficientes. Aqui apenas queremos exercitar o uso das estruturas de repetições. Além disso, `central()` poderá ter outros argumentos além de `x`.
     
-38. Sem utilizar a capacidade de vetorização da linguagem R, implemente a função `myvar(x)` que retorna a variância amostral de um vetor passado como argumetno à `x`. 
+38. Sem utilizar a capacidade de vetorização da linguagem R, nas formas do exercício anterior, implemente a função `myvar(x)` que retorna a variância amostral de um vetor passado como argumetno à `x`. 
 
     Algumas exigências a respeito do funcionamento da função `myvar()` encontram-se enumeradas abaixo:
     
     1 - A função deverá retornar todas as três medidas de dispersão ou apenas uma das estatísticas, a depender do interesse do usuário.
     
-    2 -  Observações **Not Available** `NA` serão eleminadas do cálculo. Porém, uma mensagem de aviso ao usuário deverá ser passada informando o número de observações eliminadas e em quais posições encontravam-se. 
+    2 -  Observações **Not Availables** `NA` serão eleminadas do cálculo. Porém, uma mensagem de aviso ao usuário deverá ser passada informando o número de observações eliminadas e em quais posições encontravam-se. 
     
     3 - A função deverá alertar o usuário se uma estrutura ou tipo de dados não coerente com o interesse da função for passado como argumento à `x`.
 
-     **Nota**: Não utilize a vetorização da linguagem. Nesse exercício desejamos treinar o uso das estruturas de repetições da linguagem. Não utilizar vetorização da linguagem quer dizer que você não poderá aplicar uma função à todos elementos de um vetor. Por exemplo, se `x`é um vetor, você não poderá fazer `x^2`, `sqrt(x)` ou `mean(x)`. Aplique a função a cada posição do vetor utilizando estruturas de repetições. Em seus projetos reais, utilize a capacidade de vetorização da linguagem e evite o quanto der as estruturas de repetições. Isso fará com que os seus códigos sejam mais eficientes. Aqui apenas queremos exercitar o uso das estruturas de repetições. Você também não poderá fazer uso da função `length()`.
+     **Nota**: Não utilize a vetorização da linguagem R. Nesse exercício desejamos treinar o uso das estruturas de repetições da linguagem. Não utilizar vetorização da linguagem quer dizer que você não poderá aplicar uma função à todos elementos de um vetor. Por exemplo, se `x` é um vetor, você não poderá fazer `x^2`, `sqrt(x)`, `mean(x)`, `length()`, etc. Aplique a função a cada posição do vetor utilizando estruturas de repetições. Em seus projetos reais, utilize a capacidade de vetorização da linguagem e evite o quanto der as estruturas de repetições. Isso fará com que os seus códigos sejam mais eficientes. Aqui apenas queremos exercitar o uso das estruturas de repetições. Além disso, `myvar()` poderá ter outros argumentos além de `x`.
 
-39. Se `x`, na função `myvar()`, for um vetor não numérico? E se `x` for um vetor com observações **Not Available** `NA`?  Proponha melhorias da função `myvar()` que possa tratar melhor essas situações.
+39. Se `x`, na função `myvar()`, for um vetor não numérico? E se `x` for um vetor de caracteres numéricos? E se `x` for uma string numérica como `"1,2,3"` que desejamos tratar como sendo o `c(1, 2, 3)`? Modifique a função `myvar()` para que venham tratar/considerar essas situações. 
 
 40. Implemente a função `disp(x)` que retorna uma das medidas de dispersão listadas abaixo:
 
