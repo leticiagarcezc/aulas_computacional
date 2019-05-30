@@ -173,12 +173,26 @@ A google disponibilizou um [guia de estilo](https://google.github.io/styleguide/
     8. Obtenha o data frame `dados_5` com os estados estadunidenses cuja população possuem renda maior que a média nacional e expectativa de vida maior que 72 anos.
   
     9. Adicione ao data frame `dados` duas linhas com as médias e variâncias de todas as variáveis, respectivamente.
-  
-26. Escreva uma função que retorne o imposto pago por mulheres e por homens, sabendo que as mulheres pagam $10\%$ e que os homens pagam $5\%$ a mais do que as mulheres.
 
-27. Resolva o exercício anterior utilizando a função `switch()`.
+26. Escreva um programa que retorne a saída baixo:
 
-28. Implemente a função `tab(num, inicio, fim)` que é responsável por escrever no prompt de commando a tabuada de um número passado como argumento à `num`. **Nota**: os argumentos `inicio` e `fim` referem-se ao início e fim da tabuada, ou seja, `tab(num = 1, inicio = 7, fim = 12)` deverá escrever no prompt:
+    ```r
+    i1 = 1
+    i2 = 2 
+    i3 = 3
+    i4 = 4
+    i5 = 5
+    i6 = 6
+    i7 = 7
+    ```
+
+    **Dica**: Resolva esse simples exercício de três formas diferentes (usando `while`, `for` e `repeat`).
+
+27. Escreva uma função que retorne o imposto pago por mulheres e por homens, sabendo que as mulheres pagam $10\%$ e que os homens pagam $5\%$ a mais do que as mulheres.
+
+28. Resolva o exercício anterior utilizando a função `switch()`.
+
+29. Implemente a função `tab(num, inicio, fim)` que é responsável por escrever no prompt de commando a tabuada de um número passado como argumento à `num`. **Nota**: os argumentos `inicio` e `fim` referem-se ao início e fim da tabuada, ou seja, `tab(num = 1, inicio = 7, fim = 12)` deverá escrever no prompt:
 
     ```
     1 x 7 = 7
@@ -192,18 +206,16 @@ A google disponibilizou um [guia de estilo](https://google.github.io/styleguide/
     Implemente `tab()` utilizando as diferentes escruturas de repetição da linguagem R (`for`, `while` e `repeat`).
     
     
-29. Escreva a função `celtofar()` que converte um vetor de temperaturas em graus Celsius para graus Fahrenheit. Considere:
+30. Escreva a função `celtofar()` que converte um vetor de temperaturas em graus Celsius para graus Fahrenheit. Considere:
 
     $$F = 1.8 \times C + 32,$$
     em que $C$ é a temperatura em graus Celsius e $F$ é a temperatura em graus Fahrenheit. 
 
+31. Melhore a função `celtofar()` para que critique valores não válidos de temperaturas.
 
+32. Modifique a função `celtofar()` para que funcione também para conversões no sentido oposto, isto é, para que converta de graus Fahrenheit para graus Celsius.
 
-30. Melhore a função `celtofar()` para que critique valores não válidos de temperaturas.
-
-31. Modifique a função `celtofar()` para que funcione também para conversões no sentido oposto, isto é, converta de graus Fahrenheit para graus Celsius.
-
-32. Construa a função `imc()` que calcula o IMC (Índice de Massa Corporal) de uma pessoa. A função deverá retornar o IMC e um status. Observe que: 
+33. Construa a função `imc()` que calcula o IMC (Índice de Massa Corporal) de uma pessoa. A função deverá retornar o IMC e um status. Observe que: 
 
     $$\mathrm{IMC} = \frac{\mathrm{peso}}{\mathrm{altura}^2},$$
     em que $\mathrm{peso}$ é dado em $kg$ e a $\mathrm{altura}$ é fornecida em $cm$.
@@ -215,34 +227,20 @@ A google disponibilizou um [guia de estilo](https://google.github.io/styleguide/
     ---------------   -------------------------------
     $< 17.0$          Muito abaixo do peso
 
-    $[17.0; 18.5)$    Abaixo do peso
+    $[17.0, 18.5)$    Abaixo do peso
 
-    $[18.5; 25.0)$    Peso normal
+    $[18.5, 25.0)$    Peso normal
 
-    $[25.0; 30.0)$    Acima do peso
+    $[25.0, 30.0)$    Acima do peso
 
-    $[30.0; 35.0)$    Obesidade nível I
+    $[30.0, 35.0)$    Obesidade nível I
 
-    $[35.0; 40.0)$    Obesidade nível II (severa)
+    $[35.0, 40.0)$    Obesidade nível II (severa)
 
     $\geq 40.0$       Obesidade nível III (mórbida)
     -------------------------------------------------
 
-    **Dica**: Uma função robusta deverá tratar problemas com a entrada, isto é, deverá criticar informações inconsistentes passadas como argumento.
-
-33. Escreva um programa que retorne a saída baixo:
-
-    ```r
-    i1 = 1
-    i2 = 2 
-    i3 = 3
-    i4 = 4
-    i5 = 5
-    i6 = 6
-    i7 = 7
-    ```
-
-    **Dica**: Resolva esse simples exercício de três formas diferentes (usando `while`, `for` e `repeat`).
+    **Dica**: Uma função robusta deverá tratar problema(s) com a(s) entrada(s), isto é, deverá criticar informações inconsistentes passadas como argumento.
 
 34. Utilizando a instrução de repetição `for` construa um pequeno programa que com base em um vetor de valores no intervalo
 $[0, 1]$, some apenas os valores maiores que 0.7. **Dica**: Para economizar tempo, faça `vetor <- runif(n = 1e5, min = 0, max = 1)` para gerar o objeto `vetor`.
