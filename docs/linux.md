@@ -31,18 +31,18 @@ Devido a licença [**BSD**](https://opensource.org/licenses/bsd-license.html) se
 
 Saindo do território dos sistemas BSD's proprietários, abaixo listo alguns dos mais conhecidos sistemas BSD's em que os códigos dos projetos são abertos, isto é, com [**iniciativas Open Source**](https://opensource.org/):
 
-1 - [**FreeBSD**](https://www.freebsd.org/):
+1 - [**FreeBSD**](https://www.freebsd.org/): Trata-se de um sistema moderno e livre bastante utilizado em servidores, desktops e plataformas embarcadas. O FreeBSD é talvez o sistema BSD, de código livre, que é mais amplamente utilizado entre os sistemas dessa lista. A melhor forma de acompanhar as novidades do FreeBSD é acompanhar o [**FreeBSD Journal**](https://www.freebsdfoundation.org/journal/), um jornal livre dos desenvolvedores do FreeBSD. Seu mascote genérico é o [**BSD daemon**](https://en.wikipedia.org/wiki/BSD_Daemon), apelidado de **Beastie**.  
 
-2 - [**OpenBSD**](https://www.openbsd.org/):
+2 - [**NetBSD**](https://www.netbsd.org/): Trata-se de uma derivação do sistema 4.4BSD da Universidade da California, Berkley e do 386BSD, às vezes chamado de Jolix. Assim como o FreeBSD, o NetBSD é um sistema que pode rodar em diversas arquiteturas de computadores. O seu logo é uma [**bandeirola**](https://www.netbsd.org/gallery/logos.html).
 
-3 - [**NetBSD**](https://www.netbsd.org/):
+3 - [**OpenBSD**](https://www.openbsd.org/): Trata-se de um projeto baseado no sistema 4.4BSD. O projeto OpenBSD desenvolveu aplicações como o [**OpenSSH**](https://www.openssh.com/) que é a principal ferramenta de conectividade para login remoto utilizando o protocolo [**Secure Shell (SSH)**]("https://pt.wikipedia.org/wiki/Secure_Shell").
 
 4 - [**DragonFly BSD**](https://www.dragonflybsd.org/):
 
 **Observação**:
 
 \BeginKnitrBlock{rmdobservation}<div class="rmdobservation"><div class=text-justify>
-Linux é uma marca registrada de Linus Torvalds. Você poderá ver essa informação [**aqui**](https://www.freebsd.org/doc/pt_BR.ISO8859-1/articles/explaining-bsd/article.html).
+Linux é uma marca registrada de Linus Torvalds. Você poderá ver essa informação [**aqui**](https://www.freebsd.org/doc/pt_BR.ISO8859-1/articles/explaining-bsd/article.html). Além disso, Linux é um **\*nix**, **UN\*X** ou **Unix-like** (como queira chamar) mas Linux não é um BSD nem um BSD é um Linux. Por exemplo, a biblioteca C do BSD é baseada nos códigos de Berkeley e não na [**GNU C Library**](https://pt.wikipedia.org/wiki/GNU_C_Library).
 </div></div>\EndKnitrBlock{rmdobservation}
 
 O sistema operacional Linux foi inicialmente desenvolvido pelo engenheiro de software [**Linus Torvalds**](https://github.com/torvalds) em 1991. Nessa época, [**Linus Torvalds**](https://github.com/torvalds) era discente na Universidade de Helsinque, Finlândia como estudante de ciência da computação. Sua dissertação de mestrado intitulada [**Linux: a Portable Operating System**](https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf) (56 páginas) foi defendida no Departamento de Ciência da Computação da Universidade de Helsinque, em 31 de janeiro de 1997. A dissertação introduz problemas de protabilidade do kernel Linux em diferentes arquiteturas de computadores. O autor comenta que quem acompanhou os primórdios do desenvolvimento do kernel Linux, o título de sua dissertação poderia soar como ironia, uma vez que o projeto original do Linux não estava realmente preocupado com a portabilidade do sistema em diversas arquiteturas de processadores. À época, a preocupação maior do projeto era com a execução do Linux em computadores com processadores Motorola 68k [**Amiga**](https://pt.wikipedia.org/wiki/Amiga) e [**Atari**](https://pt.wikipedia.org/wiki/Motorola_680x0), ambos de 32 bits. Isso restringia o uso de Linux em algumas arquiteturas de PCs doméstricos da época.
