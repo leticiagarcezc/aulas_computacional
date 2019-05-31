@@ -56,6 +56,19 @@ Linux é uma marca registrada de Linus Torvalds. Você poderá ver essa informa�
 
 O sistema operacional Linux foi inicialmente desenvolvido pelo engenheiro de software [**Linus Torvalds**](https://github.com/torvalds) em 1991. Nessa época, [**Linus Torvalds**](https://github.com/torvalds) era discente na Universidade de Helsinque, Finlândia como estudante de ciência da computação. Sua dissertação de mestrado intitulada [**Linux: a Portable Operating System**](https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf) (56 páginas) foi defendida no Departamento de Ciência da Computação da Universidade de Helsinque, em 31 de janeiro de 1997. A dissertação introduz problemas de protabilidade do kernel Linux em diferentes arquiteturas de computadores. O autor comenta que quem acompanhou os primórdios do desenvolvimento do kernel Linux, o título de sua dissertação poderia soar como ironia, uma vez que o projeto original do Linux não estava realmente preocupado com a portabilidade do sistema em diversas arquiteturas de processadores. À época, a preocupação maior do projeto era com a execução do Linux em computadores com processadores Motorola 68k [**Amiga**](https://pt.wikipedia.org/wiki/Amiga) e [**Atari**](https://pt.wikipedia.org/wiki/Motorola_680x0), ambos de 32 bits. Isso restringia o uso de Linux em algumas arquiteturas de PCs doméstricos da época.
 
+Segundo [**Torvalds**](https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf), a implementação do Linux foi baseada em três questões principais. São elas:
+
+1 - **Simplicidade**: Muito embora o kernel de um sistema operacional é algo complexo, e isso não é diferente no Linux, a implementação mais simples possível é um dos pilares do projeto.
+
+2 - **Eficiência**: Uma vez que o kernel está envolvido com quase todas as atividades de uma máquina (PCs, mainframes, entre outros), a implementação do kernel Linux busca a eficiência, ou seja, o kernel nunca poderá ser visto como uma restrição de desempenho.
+
+3 - **Compatibilidade**: O que está ocorrendo por baixo do kernel de um sistema operacional poderá ser de interesse para pesquisadores na área de sistemas operacionais. Dessa forma, um sistema operacional não poderá impor "surpresas" ao usuário comum ou mesmo um programador. O Linux é um sistema operacional robusto e disponível para funcionar em diversas arquiteturas e sem "surpresas".
+
+> "Embora o projeto Linux tenha sido intimamente associado a mim pessoalmente, em parte devido ao nome, gostaria de deixar         bem   claro que o sistema operacional Linux é um grande projeto feito cooperativamente por muitas pessoas em todo o             mundo. Mesmo se você descontar todos os programas em nível de usuário que são parte integrante de qualquer sistema Linux,        apenas o kernel contém código de centenas de pessoas ao redor do mundo. Obrigado a todos vocês."
+
+> 
+
+>  Linus Torvalds, [**Linux: a Portable Operating System**](https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf), página 3. 
 
 Atualmente o desenvolvimento do kernel Linux possuem colaborações de diversos programadores ao redor do mundo, em que [**Linus Torvalds**](https://github.com/torvalds) é o pricipal desenvolvedor e gerencia o rumo em que o projeto deverá seguir.
 
