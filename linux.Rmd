@@ -50,7 +50,7 @@ Saindo do território dos sistemas BSD's proprietários, abaixo listo alguns dos
 
 ```{block2, type='rmdobservation'}
 <div class=text-justify>
-Linux é uma marca registrada de Linus Torvalds. Você poderá ver essa informação [**aqui**](https://www.freebsd.org/doc/pt_BR.ISO8859-1/articles/explaining-bsd/article.html). Além disso, Linux é um **\*nix**, **UN\*X** ou **Unix-like** (como queira chamar) mas Linux não é um BSD nem um BSD é um Linux. Por exemplo, a biblioteca C do BSD é baseada nos códigos de Berkeley e não na [**GNU C Library**](https://pt.wikipedia.org/wiki/GNU_C_Library).
+Linux é uma marca registrada de Linus Torvalds. Você poderá ver essa informação [**aqui**](https://www.freebsd.org/doc/pt_BR.ISO8859-1/articles/explaining-bsd/article.html). Além disso, Linux é um **\*nix**, **UN\*X** ou **Unix-like** (como queira chamar) mas Linux não é um BSD nem um BSD é um Linux. Por exemplo, a biblioteca C do BSD é baseada nos códigos de Berkeley e não na [**GNU C Library**](https://pt.wikipedia.org/wiki/GNU_C_Library). Dessa forma, diferentemente dos diversos sistemas BSD's, o Linux  utiliza-se de alguns recursos fornecidos do [**GNU C**](https://gcc.gnu.org/). 
 </div>
 ```
 
@@ -70,7 +70,9 @@ Segundo [**Torvalds**](https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.p
 
 > --- Linus Torvalds, [**Linux: a Portable Operating System**](https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf), página 3. 
 
-A todo momento, nessa nossa conversa, a expressão **kernel** foi utilizada junto com o termo Linux. Isso normalmente é feito para deixar claro que o Linux é um programa que gerencia os seus hardwares e o funcionamento dos programas que você utiliza no seu dia a dia, caso você esteja utilizando uma distribuição Linux, é claro. Porém, se você ainda não está utilizando o Linux nesse momento, saiba que o seu sistema operacional possui um kernel, sendo este a parte mais importante do sistema operacional.
+A todo momento, nessa nossa conversa, a expressão **kernel** foi utilizada junto com o termo Linux. Isso normalmente é feito para deixar claro que o Linux é um programa que gerencia os seus hardwares e o funcionamento dos programas que você utiliza no seu dia a dia, caso você esteja utilizando uma distribuição Linux, é claro. Porém, se você ainda não está utilizando o Linux nesse momento, saiba que o seu sistema operacional possui um kernel, sendo este a parte mais importante do sistema.
+
+Para que um sistema operacional venha ser utilizado pela maioria das pessoas, em que nesse grupo nos incluímos, deve conter diversos outros programas e recursos além do kernel propriamente dito. Para nós que trabalhamos com estatístca, por exemplo, precisamos de ter a nossa disposição outras linguagens de programação além de C, como R, C++, Java e Python, IDEs (**Integrated Development Environment**) para programação, softwares para escrita de relatórios, sistemas de gerenciamento de banco de dados, entre outros programas de interesse. 
 
 Atualmente o desenvolvimento do kernel Linux possuem colaborações de diversos programadores ao redor do mundo, em que [**Linus Torvalds**](https://github.com/torvalds) é o pricipal desenvolvedor e gerencia o rumo em que o projeto deverá seguir.
 
