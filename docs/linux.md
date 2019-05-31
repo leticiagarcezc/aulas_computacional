@@ -2,8 +2,9 @@
 
 Nesse capítulo tentarei o convencer, sem imposições, que o uso de alguma distribuição GNU/Linux poderá ser um caminho coerente e que tratá facilidades para quem deseja um sistema operacional flexível, fácil de manter e livre. Tentarei aqui expressar minhas experiências no uso do linux na estatística e irei sugerir distribuições GNU/Linux que considero interessantes.
 
+<img src="images/linux_class.jpg" width="90%" style="display: block; margin: auto;" />
 
-**Observação**:
+</br>**Observação**:
 
 \BeginKnitrBlock{rmdobservation}<div class="rmdobservation"><div class=text-justify>
 Você é livre para escolher o sistema operacional (SO) ao qual deseja trabalhar. Porém, em situações em que seja necessário dissertar sobre alguma configuração específica do SO (**não serão muitas**), as explicações apresentadas levarão em consideração apenas sistemas GNU/Linux.

@@ -2,8 +2,11 @@
 
 Nesse capítulo tentarei o convencer, sem imposições, que o uso de alguma distribuição GNU/Linux poderá ser um caminho coerente e que tratá facilidades para quem deseja um sistema operacional flexível, fácil de manter e livre. Tentarei aqui expressar minhas experiências no uso do linux na estatística e irei sugerir distribuições GNU/Linux que considero interessantes.
 
+```{r echo=FALSE, out.width='90%', fig.align = "center"}
+knitr::include_graphics("images/linux_class.jpg")
+```
 
-**Observação**:
+</br>**Observação**:
 
 ```{block2, type='rmdobservation'}
 <div class=text-justify>
