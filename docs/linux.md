@@ -1,18 +1,18 @@
 # Evangelizando para o uso do GNU/Linux
 
-Nesse capítulo tentarei o convencer, sem imposições, que o uso de alguma distribuição GNU/Linux poderá ser um caminho coerente e que tratá facilidades para quem deseja um sistema operacional flexível, fácil de manter e livre. Tentarei aqui expressar minhas experiências no uso do linux na estatística e irei sugerir distribuições GNU/Linux que considero interessantes.
+Nesse capítulo tentarei o convencer, sem imposições, que o uso de alguma distribuição GNU/Linux poderá ser um caminho coerente e que trará facilidades para quem deseja um sistema operacional flexível, fácil de manter e livre. Tentarei aqui expressar minhas experiências no uso do linux de uma forma geral e na estatística. Ao final, irei sugerir distribuições GNU/Linux que considero interessantes e elencarei os motivos.
 
 <img src="images/linux_class.jpg" width="90%" style="display: block; margin: auto;" />
 
 </br>**Observação**:
 
 \BeginKnitrBlock{rmdobservation}<div class="rmdobservation"><div class=text-justify>
-Você é livre para escolher o sistema operacional (SO) ao qual deseja trabalhar. Porém, em situações em que seja necessário dissertar sobre alguma configuração específica do SO (**não serão muitas**), as explicações apresentadas levarão em consideração apenas sistemas GNU/Linux.
+Você é livre para escolher o sistema operacional (SO) ao qual deseja trabalhar. Porém, em situações em que seja necessário dissertar sobre alguma configuração específica do sistema (**não serão muitas**), as explicações apresentadas levarão em consideração apenas sistemas GNU/Linux.
 </div></div>\EndKnitrBlock{rmdobservation}
 
 ## Um breve histórico
 
-Em meados de 1970, o Unix foi e nos dias de hoje ainda é um dos sistemas operacionais mais amplamente utilizados em [**mainframes**](https://pt.wikipedia.org/wiki/Mainframe) devido à sua ampla confiabilidade, distribuição e suporte. Muitos desses sistemas Unix se tratavam de sistemas proprietários. Entre os sistemas Unix mais populares e livres estava o **Berkley Software Distribution** (**BSD**) cujo desenvolvimento (1977 e 1995) era realizado pela **Computer Systems Research Group** (**CSRG**) vinculado à Universidade da Califórnia em Berkely. 
+Em meados de 1970, o Unix foi e nos dias de hoje ainda é um dos sistemas operacionais mais amplamente utilizados em [**mainframes**](https://pt.wikipedia.org/wiki/Mainframe) devido à sua ampla confiabilidade, distribuição e suporte. Muitos desses sistemas Unix se tratavam de sistemas proprietários. Entre os sistemas Unix mais populares e livres estava o **Berkley Software Distribution** (**BSD**) cujo desenvolvimento (1977 e 1995) era realizado pela **Computer Systems Research Group** (**CSRG**), vinculado à Universidade da Califórnia em Berkely. 
 
 **Nota**:
 
